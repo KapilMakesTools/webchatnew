@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webchat Teamplates</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .container {
+			margin-top: 50px;
+		}
+		.card-header {
+			background-color: #f5f5f5;
+		}
+        .card-body {
+			background-color: #f9f9f9;
+			padding: 10px 20px;
+		}
+		.card-body p {
+			margin: 0;
+		}
+    </style>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+        <h1>Webchat Templates</h1>
+        <h3>Made by Kapil Pidhwani</h3>
+		<div class="accordion" id="toggleList">
+			<div class="card">
+				<div class="card-header" id="heading1">
+					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">General</button>
+				</div>
+				<div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#toggleList">
+					<div class="card-body">
+						<p>Content 1</p>
+					</div>
+				</div>
+			</div>
+			<div class="card" Class="Withdrawal">
+				<div class="card-header" id="heading2">
+					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Withdrawal</button>
+				</div>
+				<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#toggleList">
+					<div class="card-body">
+						<p>Content 2</p>
+						<div class="accordion" id="innerToggleList">
+							<div class="card">
+								<div class="card-header" id="innerHeading1">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#innerCollapse1" aria-expanded="false" aria-controls="innerCollapse1">Toggle 2.1</button>
+								</div>
+								<div id="innerCollapse1" class="collapse" aria-labelledby="innerHeading1" data-parent="#innerToggleList">
+									<div class="card-body">
+										<p>									Content 2.1
+								</p>
+							</div>
+						</div>
+					<div class="card">
+							<div class="card-header" id="innerHeading2">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#innerCollapse2" aria-expanded="false" aria-controls="innerCollapse2">Toggle 2.2</button>
+							</div>
+							<div id="innerCollapse2" class="collapse" aria-labelledby="innerHeading2" data-parent="#innerToggleList">
+								<div class="card-body">
+									<p>
+										Content 2.2
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="card" id="Details Change">
+			<div class="card-header" id="heading3">
+				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsedetails" aria-expanded="false" aria-controls="collapse3">Change of Details</button>
+			</div>
+			<div id="collapsedetails" class="collapse" aria-labelledby="heading3" data-parent="#toggleList">
+				<div class="card-body">
+                    <p>Thank you for contacting ACCA. If you have any further queries, please do not hesitate to contact us. Have a good day.</p>
+                    <br>
+					<p>As there is no response from your side, I'll have to disconnect this chat. Thank you for contacting ACCA.</p>
+				</div>
+			</div>
+		</div>
+        <div class="card" id="Technical Issues">
+			<div class="card-header" id="heading3">
+				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Technical Issues</button>
+			</div>
+			<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#toggleList">
+				<div class="card-body">
+                    <p>Thank you for contacting ACCA. If you have any further queries, please do not hesitate to contact us. Have a good day.</p>
+                    <br>
+					<p>As there is no response from your side, I'll have to disconnect this chat. Thank you for contacting ACCA.</p>
+				</div>
+			</div>
+		</div>
+        <div class="card" id="Re-registration">
+			<div class="card-header" id="heading3">
+				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapserereg" aria-expanded="false" aria-controls="collapse3">Re-registration</button>
+			</div>
+			<div id="collapserereg" class="collapse" aria-labelledby="heading3" data-parent="#toggleList">
+				<div class="card-body">
+                    <p>Thank you for contacting ACCA. If you have any further queries, please do not hesitate to contact us. Have a good day.</p>
+                    <br>
+					<p>As there is no response from your side, I'll have to disconnect this chat. Thank you for contacting ACCA.</p>
+				</div>
+			</div>
+		</div>
+        <div class="card" id="Handoffs">
+			<div class="card-header" id="heading3">
+				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsehandoffs" aria-expanded="false" aria-controls="collapse3">Handoffs</button>
+			</div>
+			<div id="collapsehandoffs" class="collapse" aria-labelledby="heading3" data-parent="#toggleList">
+				<div class="card-body">
+                    <p>Thank you for contacting ACCA. If you have any further queries, please do not hesitate to contact us. Have a good day.</p>
+                    <br>
+					<p>As there is no response from your side, I'll have to disconnect this chat. Thank you for contacting ACCA.</p>
+				</div>
+			</div>
+		</div>
+		<div class="card" id="Closing">
+			<div class="card-header" id="heading3">
+				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseclosing" aria-expanded="false" aria-controls="collapse3">Closing</button>
+			</div>
+			<div id="collapseclosing" class="collapse" aria-labelledby="heading3" data-parent="#toggleList">
+				<div class="card-body">
+                    <p>Thank you for contacting ACCA. If you have any further queries, please do not hesitate to contact us. Have a good day.</p>
+                    <br>
+					<p>As there is no response from your side, I'll have to disconnect this chat. Thank you for contacting ACCA.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
