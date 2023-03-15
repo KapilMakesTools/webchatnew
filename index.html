@@ -1,668 +1,955 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Webchat Templates by Kapil Pidhwani" />
-  <title>Webchat Teamplates</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <style>
-    .container {
-      margin-top: 50px;
-      font-family: Arial;
-      font-size: 16px;
-    }
-
-    .card-header {
-      background-color: #f5f5f5;
-    }
-
-    .card-body {
-      background-color: #f9f9f9;
-      padding: 10px 20px;
-    }
-
-    .card-body p {
-      margin: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .container {
-      margin-bottom: 5em;
-    }
-
-    /* Responsive styles */
-    @media (max-width: 576px) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Webchat Templates by Kapil Pidhwani" />
+    <title>Webchat Teamplates</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
       .container {
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-
-      h1 {
-        font-size: 24px;
-      }
-
-      h3 {
-        font-size: 18px;
+        margin-top: 50px;
+        font-family: Arial;
+        font-size: 16px;
       }
 
       .card-header {
-        padding: 5px;
+        background-color: #f5f5f5;
       }
 
       .card-body {
-        padding: 5px 10px;
+        background-color: #f9f9f9;
+        padding: 10px 20px;
       }
 
       .card-body p {
-        font-size: 14px;
+        margin: 0;
       }
-    }
 
-    /* The switch - the box around the slider */
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 60px;
-      height: 34px;
-    }
+      html {
+        scroll-behavior: smooth;
+      }
 
-    /* Hide default HTML checkbox */
-    .switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
+      .container {
+        margin-bottom: 5em;
+      }
 
-    /* The slider */
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      -webkit-transition: .4s;
-      transition: .4s;
-      border-radius: 34px;
-    }
+      /* Responsive styles */
+      @media (max-width: 576px) {
+        .container {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
 
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
-      background-color: white;
-      -webkit-transition: .4s;
-      transition: .4s;
-      border-radius: 50%;
-    }
+        h1 {
+          font-size: 24px;
+        }
 
-    input:checked+.slider {
-      background-color: #2196F3;
-    }
+        h3 {
+          font-size: 18px;
+        }
 
-    input:focus+.slider {
-      box-shadow: 0 0 1px #2196F3;
-    }
+        .card-header {
+          padding: 5px;
+        }
 
-    input:checked+.slider:before {
-      -webkit-transform: translateX(26px);
-      -ms-transform: translateX(26px);
-      transform: translateX(26px);
-    }
-  </style>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-</head>
+        .card-body {
+          padding: 5px 10px;
+        }
 
-<body>
-  <div class="container">
-    <h1>Webchat Templates</h1>
-    <h3>Made by Kapil Pidhwani</h3>
-    <label class="switch" for="toggle-collapse">
-      <input type="checkbox" id="toggle-collapse">
-      <span class="slider round"></span>
-    </label>
-    <div class="accordion" id="toggleList">
-      <div class="card" id="Customer Verification">
-        <div class="card-header" id="heading1" type="button" data-toggle="collapse" data-target="#collapseCV"
-          aria-expanded="true" aria-controls="collapseCV">
-          <text class="btn bg-transparent">Customer Verification</text>
-        </div>
-        <div id="collapseCV" class="collapse" aria-labelledby="heading1" data-parent="#toggleList">
-          <div class="card-body">
-            <strong>Requesting for initial verification details:</strong>
-            <p>
-              Hello, thanks for contacting ACCA customer support. To ensure
-              the security of your account, Can you please share your ACCA ID,
-              Full Name, Registered Contact Number, and Email ID?
-            </p>
-            <br />
-            <strong>Requesting for alternate verification details:</strong>
-            <p>Can you please provide me with your date of birth as well?</p>
-            <small>(If CV is still not met, ask for other details such as
-              Registered Home address, Number of exemptions awarded (if any),
-              and Date of Registration)</small>
-            <br />
-            <br />
-            <strong>Time Request for Verification:</strong>
-            <p>
-              Please allow me 2-3 minutes to check your information. I
-              appreciate your patience in advance.
-            </p>
-            <br />
-            <strong>Successful verification:</strong>
-            <p>
-              Thank you for providing me with the correct verification
-              details. Your account has been successfully verified and I will
-              now proceed to assist you with your query.
-            </p>
-            <br />
-            <strong>Failed 4-step verification:</strong>
-            <p>
-              I apologise, but in order to assist you further, I request you
-              to please email us your query to
-              <a href="mailto:students@accaglobal.com">students@accaglobal.com</a>
-            </p>
-            <br />
-            <strong>Reassurance:</strong>
-            <p>
-              I understand that this verification process can be tiring, but
-              please understand that we are taking these steps to ensure the
-              security of your account and protect your personal information.
-              Thank you for your cooperation.
-            </p>
-            <br />
+        .card-body p {
+          font-size: 14px;
+        }
+      }
+
+      /* The switch - the box around the slider */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+
+      /* Hide default HTML checkbox */
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 34px;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+
+      input:checked + .slider {
+        background-color: #000000;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #000000;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+    </style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Webchat Templates</h1>
+      <h3>Made by Kapil Pidhwani</h3>
+      <label class="switch" for="toggle-collapse">
+        <input type="checkbox" id="toggle-collapse" />
+        <span class="slider round"></span>
+      </label>
+      <div class="accordion" id="toggleList">
+        <div class="card" id="Customer Verification">
+          <div
+            class="card-header"
+            id="heading1"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseCV"
+            aria-expanded="true"
+            aria-controls="collapseCV"
+          >
+            <text class="btn bg-transparent">Customer Verification</text>
+          </div>
+          <div
+            id="collapseCV"
+            class="collapse"
+            aria-labelledby="heading1"
+            data-parent="#toggleList"
+          >
+            <div class="card-body">
+              <strong>Requesting for initial verification details:</strong>
+              <p>
+                Hello, thanks for contacting ACCA customer support. To ensure
+                the security of your account, Can you please share your ACCA ID,
+                Full Name, Registered Contact Number, and Email ID?
+              </p>
+              <br />
+              <strong>Requesting for alternate verification details:</strong>
+              <p>Can you please provide me with your date of birth as well?</p>
+              <small
+                >(If CV is still not met, ask for other details such as
+                Registered Home address, Number of exemptions awarded (if any),
+                and Date of Registration)</small
+              >
+              <br />
+              <br />
+              <strong>Time Request for Verification:</strong>
+              <p>
+                Please allow me 2-3 minutes to check your information. I
+                appreciate your patience in advance.
+              </p>
+              <br />
+              <strong>Successful verification:</strong>
+              <p>
+                Thank you for providing me with the correct verification
+                details. Your account has been successfully verified and I will
+                now proceed to assist you with your query.
+              </p>
+              <br />
+              <strong>Failed 4-step verification:</strong>
+              <p>
+                I apologise, but in order to assist you further, I request you
+                to please email us your query to
+                <a href="mailto:students@accaglobal.com"
+                  >students@accaglobal.com</a
+                >
+              </p>
+              <br />
+              <strong>Reassurance:</strong>
+              <p>
+                I understand that this verification process can be tiring, but
+                please understand that we are taking these steps to ensure the
+                security of your account and protect your personal information.
+                Thank you for your cooperation.
+              </p>
+              <br />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card" id="Empathy">
-        <div class="card-header" id="headingempathy" type="button" data-toggle="collapse" data-target="#collapseempathy"
-          aria-expanded="false" aria-controls="collapseempathy">
-          <text class="btn bg-transparent">Empathy</text>
-        </div>
-        <div id="collapseempathy" class="collapse" aria-labelledby="headingempathy" data-parent="#toggleList">
-          <div class="card-body">
-            <p>
-              I understand that this must be a very challenging moment for
-              you, and I'm hoping things get better for you soon.
-            </p>
-            <br />
-            <p>
-              I wish you all the best in your future endeavors, and please
-              don't hesitate to reach out if there's anything we can do to
-              support you.
-            </p>
+        <div class="card" id="Empathy">
+          <div
+            class="card-header"
+            id="headingempathy"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseempathy"
+            aria-expanded="false"
+            aria-controls="collapseempathy"
+          >
+            <text class="btn bg-transparent">Empathy</text>
+          </div>
+          <div
+            id="collapseempathy"
+            class="collapse"
+            aria-labelledby="headingempathy"
+            data-parent="#toggleList"
+          >
+            <div class="card-body">
+              <p>
+                I understand that this must be a very challenging moment for
+                you, and I'm hoping things get better for you soon.
+              </p>
+              <br />
+              <p>
+                I wish you all the best in your future endeavors, and please
+                don't hesitate to reach out if there's anything we can do to
+                support you.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card" id="Withdrawal">
-        <div class="card-header" id="headingwithdrawal" type="button" data-toggle="collapse"
-          data-target="#collapsewithdrawal" aria-expanded="false" aria-controls="collapsewithdrawal">
-          <text class="btn bg-transparent">Withdrawal</text>
-        </div>
-        <div id="collapsewithdrawal" class="collapse" aria-labelledby="headingwithdrawal" data-parent="#toggleList">
-          <div class="card-body">
-            <p>
-              <strong>Expressing empathy for the inability to attend the
-                exam</strong>
-            </p>
-            <p>
-              I am sorry to hear that you won&#39;t be able to attend your
-              March exam. I understand that this can be disappointing, and I
-              would be happy to assist you with your withdrawal request.
-            </p>
-            <br />
-            <strong>Request for the reason for the withdrawal</strong>
-            <p>
-              As we have passed the standard entry date for this exam session,
-              withdrawals can only be processed in exceptional cases. Could
-              you please confirm your reason for withdrawal?
-            </p>
-            <br />
-            <p><strong>Request for documentary evidence</strong></p>
-            <p>
-              To process your withdrawal request, could you please send any
-              documentary evidence that you have in this chat? This will help
-              us to understand your situation better and process your request
-              more efficiently.
-            </p>
-            <br />
-            <p><strong>Reviewing Documents</strong></p>
-            <p>
-              Thank you for submitting the supporting documents for
-              withdrawal. I will review them now. It may take me approximately
-              3-5 minutes to go through everything. Please wait while I review
-              your documents.
-            </p>
-            <br />
-            <p>
-              <strong>Confirmation of exam withdrawal and credit return</strong>
-            </p>
-            <p>
-              I am pleased to confirm that your exam has been withdrawn, and
-              the fee has been returned to your myACCA account as a credit. If
-              you would like to book for the June 2023 session, please note
-              that the standard entry date is 1 May 2023. You can check out
-              the important dates section of our
-              <a href="https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html">website</a>
-              for more information.
-            </p>
-            <br />
-            <p><strong>Inability to grant withdrawal request</strong></p>
-            <p>
-              I am sorry to hear that your withdrawal request has been
-              rejected by our colleagues, but I do not have the authority to
-              override their decision. I apologise for any inconvenience this
-              may have caused.
-            </p>
-            <br />
-            <p>
-              <strong>Declining withdrawal request due to exam clash</strong>
-            </p>
-            <p>
-              I understand that you have previously contacted our colleagues
-              regarding your withdrawal request due to an exam clash, but as
-              per ACCA policies, we cannot accept this reason for withdrawal
-              as you were informed by your institute about the exams before
-              booking the ACCA exam for this session.
-            </p>
-            <br />
-            <strong>Requirement for official medical documents</strong>
-            <p>
-              I apologise for any confusion, but we cannot process your
-              withdrawal based on the reasons provided. If you would like to
-              request a withdrawal due to medical reasons, we require an
-              official medical note or report from your Doctor/GP confirming
-              that you are unable to attend the exam. It should mention your
-              illness and the dates of the exam. Also if this document is not
-              in English, we would also require an English translation stamped
-              by an official translator. Additionally, we need a letter from
-              the translator confirming the accuracy of the translation.
-            </p>
-            <br />
-            <strong>Requirement for an official letter from the school for exam
-              withdrawal
-            </strong>
-            <p>
-              I apologise that we have been unable to withdraw your exam based
-              on the documents provided. To withdraw, we require an official
-              letter from your school confirming the date of the exam,
-              including your name, the name of your school, the date of the
-              exam, and the date you were informed of this. If this letter is
-              not in English, we require an official stamped translation.
-              Please note that we cannot accept self-translated documents.
-            </p>
-            <br />
-            <strong>Request for bereavement documents</strong>
-            <p>
-              Please accept my condolences during this difficult time. I
-              understand that you would like to withdraw from your exam. I
-              request you provide us with necessary documentation such as a
-              death certificate, obituary or funeral service program. Please
-              be assured that we will handle your request with utmost
-              sensitivity and confidentiality.
-            </p>
-            <br />
-            <strong>Contradicting reasons</strong>
-            <p>
-              You requested a withdrawal due to an exam clash and now say it
-              is a medical reason; you will need to provide a new set of
-              documents for us to review your case; these must be medical
-              documents. We will not be processing your withdrawal at this
-              time.
-            </p>
-            <br />
-            <strong>Rejecting Withdrawal</strong>
-            <p>
-              I'm sorry, but our decision is final; we will not process your
-              exam withdrawal, and we ask that you sit your exam and submit a
-              mitigating circumstance afterward. This will be taken into
-              account when assessing your exam.
-            </p>
-            <br />
-            <strong>Apology for the delay</strong>
-            <p>
-              I apologise for the delay in processing your request. Our team
-              is currently experiencing a high volume of requests, so it may
-              take up to 10 working days to process your request. Thank you
-              for your patience and understanding.
-            </p>
+        <div class="card" id="Withdrawal">
+          <div
+            class="card-header"
+            id="headingwithdrawal"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsewithdrawal"
+            aria-expanded="false"
+            aria-controls="collapsewithdrawal"
+          >
+            <text class="btn bg-transparent">Withdrawal</text>
+          </div>
+          <div
+            id="collapsewithdrawal"
+            class="collapse"
+            aria-labelledby="headingwithdrawal"
+            data-parent="#toggleList"
+          >
+            <div class="card-body">
+              <p>
+                <strong
+                  >Expressing empathy for the inability to attend the
+                  exam</strong
+                >
+              </p>
+              <p>
+                I am sorry to hear that you won&#39;t be able to attend your
+                March exam. I understand that this can be disappointing, and I
+                would be happy to assist you with your withdrawal request.
+              </p>
+              <br />
+              <strong>Request for the reason for the withdrawal</strong>
+              <p>
+                As we have passed the standard entry date for this exam session,
+                withdrawals can only be processed in exceptional cases. Could
+                you please confirm your reason for withdrawal?
+              </p>
+              <br />
+              <p><strong>Request for documentary evidence</strong></p>
+              <p>
+                To process your withdrawal request, could you please send any
+                documentary evidence that you have in this chat? This will help
+                us to understand your situation better and process your request
+                more efficiently.
+              </p>
+              <br />
+              <p><strong>Reviewing Documents</strong></p>
+              <p>
+                Thank you for submitting the supporting documents for
+                withdrawal. I will review them now. It may take me approximately
+                3-5 minutes to go through everything. Please wait while I review
+                your documents.
+              </p>
+              <br />
+              <p>
+                <strong
+                  >Confirmation of exam withdrawal and credit return</strong
+                >
+              </p>
+              <p>
+                I am pleased to confirm that your exam has been withdrawn, and
+                the fee has been returned to your myACCA account as a credit. If
+                you would like to book for the June 2023 session, please note
+                that the standard entry date is 1 May 2023. You can check out
+                the important dates section of our
+                <a
+                  href="https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html"
+                  >website</a
+                >
+                for more information.
+              </p>
+              <br />
+              <p><strong>Inability to grant withdrawal request</strong></p>
+              <p>
+                I am sorry to hear that your withdrawal request has been
+                rejected by our colleagues, but I do not have the authority to
+                override their decision. I apologise for any inconvenience this
+                may have caused.
+              </p>
+              <br />
+              <p>
+                <strong>Declining withdrawal request due to exam clash</strong>
+              </p>
+              <p>
+                I understand that you have previously contacted our colleagues
+                regarding your withdrawal request due to an exam clash, but as
+                per ACCA policies, we cannot accept this reason for withdrawal
+                as you were informed by your institute about the exams before
+                booking the ACCA exam for this session.
+              </p>
+              <br />
+              <strong>Requirement for official medical documents</strong>
+              <p>
+                I apologise for any confusion, but we cannot process your
+                withdrawal based on the reasons provided. If you would like to
+                request a withdrawal due to medical reasons, we require an
+                official medical note or report from your Doctor/GP confirming
+                that you are unable to attend the exam. It should mention your
+                illness and the dates of the exam. Also if this document is not
+                in English, we would also require an English translation stamped
+                by an official translator. Additionally, we need a letter from
+                the translator confirming the accuracy of the translation.
+              </p>
+              <br />
+              <strong
+                >Requirement for an official letter from the school for exam
+                withdrawal
+              </strong>
+              <p>
+                I apologise that we have been unable to withdraw your exam based
+                on the documents provided. To withdraw, we require an official
+                letter from your school confirming the date of the exam,
+                including your name, the name of your school, the date of the
+                exam, and the date you were informed of this. If this letter is
+                not in English, we require an official stamped translation.
+                Please note that we cannot accept self-translated documents.
+              </p>
+              <br />
+              <strong>Request for bereavement documents</strong>
+              <p>
+                Please accept my condolences during this difficult time. I
+                understand that you would like to withdraw from your exam. I
+                request you provide us with necessary documentation such as a
+                death certificate, obituary or funeral service program. Please
+                be assured that we will handle your request with utmost
+                sensitivity and confidentiality.
+              </p>
+              <br />
+              <strong>Contradicting reasons</strong>
+              <p>
+                You requested a withdrawal due to an exam clash and now say it
+                is a medical reason; you will need to provide a new set of
+                documents for us to review your case; these must be medical
+                documents. We will not be processing your withdrawal at this
+                time.
+              </p>
+              <br />
+              <strong>Rejecting Withdrawal</strong>
+              <p>
+                I'm sorry, but our decision is final; we will not process your
+                exam withdrawal, and we ask that you sit your exam and submit a
+                mitigating circumstance afterward. This will be taken into
+                account when assessing your exam.
+              </p>
+              <br />
+              <strong>Final Rejection before Termination</strong>
+              <p>I'm sorry that I am unable to fulfill your request for exam withdrawal. Is there any other way we can assist you today before we end this chat?</p>
+              <br/>
+              <strong>Terminate</strong>
+              <p>In that case Thank you for contacting us today. I wish you good luck for your exams. Have a great day!</p>
+              <br/>
+              <strong>Apology for the delay</strong>
+              <p>
+                I apologise for the delay in processing your request. Our team
+                is currently experiencing a high volume of requests, so it may
+                take up to 10 working days to process your request. Thank you
+                for your patience and understanding.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card" id="Details Change">
-        <div class="card-header" id="headingdetails" type="button" data-toggle="collapse" data-target="#collapsedetails"
-          aria-expanded="false" aria-controls="collapsedetails">
-          <text class="btn bg-transparent">Change of Details</text>
-        </div>
-        <div id="collapsedetails" class="collapse" aria-labelledby="headingdetails" data-parent="#toggleList">
-          <div class="card-body">
-            <p>
-              Thank you for contacting ACCA. If you have any further queries,
-              please do not hesitate to contact us. Have a good day.
-            </p>
-            <br />
-            <p>
-              As there is no response from your side, I'll have to disconnect
-              this chat. Thank you for contacting ACCA.
-            </p>
+        <div class="card" id="Details Change">
+          <div
+            class="card-header"
+            id="headingdetails"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsedetails"
+            aria-expanded="false"
+            aria-controls="collapsedetails"
+          >
+            <text class="btn bg-transparent">Change of Details</text>
+          </div>
+          <div
+            id="collapsedetails"
+            class="collapse"
+            aria-labelledby="headingdetails"
+            data-parent="#toggleList"
+          >
+            <div class="card-body">
+              <p><strong>Name Change General</strong></p>
+              <p>
+                To update your name in our records, we require supporting
+                documents such as a National ID, Passport or any other official
+                document indicating a name change.
+              </p>
+              <br />
+              <p><strong>Name Change due to marriage</strong></p>
+              <p>
+                To update your name in our records, we require supporting
+                documents such as a marriage certificate, a deed poll
+                certificate, or any other official document indicating a name
+                change.&nbsp;
+              </p>
+              <br />
+              <p><strong>Format Confirmation</strong></p>
+              <p>
+                Please confirm how you want your name to appear in your myACCA
+                account:
+              </p>
+              <p>First Name:</p>
+              <p>Last Name:</p>
+              <br />
+              <p><strong>Request to wait</strong></p>
+              <p>
+                Thank you for confirming your details. I'll make the necessary
+                changes to your account in a few minutes. Your patience is
+                appreciated.
+              </p>
+              <br />
+              <p><strong>Update Confirmation</strong></p>
+              <p>
+                I've made the necessary changes in our records, please check if
+                updated details are now appearing in your myACCA account.
+              </p>
+              <br />
+              <p><strong>No Documents Available Currently</strong></p>
+              <p>
+                You can also send us the necessary documents via email at
+                <a
+                  href="mailto:students@accaglobal.com"
+                  target="_blank"
+                  rel="noopener"
+                  >students@accaglobal.com</a
+                >. Upon receiving and verifying the document, we'll update your
+                name on our records.
+              </p>
+              <br />
+              <p><strong>Email Address Updation Request</strong></p>
+              <p>
+                I can see that the email address associated with your myACCA
+                account is [OLD EMAIL]. If you'd like to update your email
+                address, please let me know.
+              </p>
+              <br />
+              <p><strong>New Email Confirmation</strong></p>
+              <p>
+                Please confirm the correct email you'd like to use moving
+                forward.
+              </p>
+              <p>Previously Registered Email: [OLD EMAIL]</p>
+              <p>New Email Address: [NEW EMAIL]</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card" id="Technical Issues">
-        <div class="card-header" id="headingtechnical" type="button" data-toggle="collapse"
-          data-target="#collapsetechnical" aria-expanded="false" aria-controls="collapsetechnical">
-          <text class="btn bg-transparent">Technical Issues</text>
-        </div>
-        <div id="collapsetechnical" class="collapse" aria-labelledby="headingtechnical" data-parent="#toggleList">
-          <div class="card-body">
-            <p><strong>Facing Technical Issue</strong></p>
-            <p>
-              I apologise for the inconvenience caused by the technical issue
-              you&#39;re experiencing with our website. Could you please
-              provide more details on the specific issue you are facing?
-            </p>
-            <br />
-            <p><strong>Error Message Received</strong></p>
-            <p>
-              I&#39;m sorry to hear that you&#39;ve received an error message
-              while attempting to access your myACCA account.
-            </p>
-            <br />
-            <p><strong>Troubleshoot</strong></p>
-            <p>
-              I suggest that you delete your temporary internet files and
-              cookies. You can refer to this video on how to clear your cache.
-            </p>
-            <p>
-              You can also try accessing our website on a different device or
-              web browser.
-            </p>
-            <p>
-              If the issue persists or you receive any error messages, please
-              provide me with a screenshot (using the print screen function on
-              your keyboard) and I&#39;ll have our IT department investigate.
-            </p>
-            <p>
-              Thank you for providing me with the screenshot of the error. I
-              will raise this with our specialist IT team and update you via
-              email as soon as we have more information.
-            </p>
-            <br />
-            <p><strong>Appreciate for highlighting this issue</strong></p>
-            <p>
-              Thank you for bringing this to our attention, we appreciate your
-              patience while we work to resolve the issue.
-            </p>
-            <br />
-            <p><strong>Resolved Sub-code Error</strong></p>
-            <p>
-              I&#39;m pleased to inform you that I have resolved the error on
-              your account. Please confirm if you&#39;re able to access your
-              account now. If you continue to experience any issues, please
-              let me know&nbsp;and I&#39;ll have our IT department
-              investigate.
-            </p>
+        <div class="card" id="Technical Issues">
+          <div
+            class="card-header"
+            id="headingtechnical"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsetechnical"
+            aria-expanded="false"
+            aria-controls="collapsetechnical"
+          >
+            <text class="btn bg-transparent">Technical Issues</text>
+          </div>
+          <div
+            id="collapsetechnical"
+            class="collapse"
+            aria-labelledby="headingtechnical"
+            data-parent="#toggleList"
+          >
+            <div class="card-body">
+              <p><strong>Facing Technical Issue</strong></p>
+              <p>
+                I apologise for the inconvenience caused by the technical issue
+                you&#39;re experiencing with our website. Could you please
+                provide more details on the specific issue you are facing?
+              </p>
+              <br />
+              <p><strong>Error Message Received</strong></p>
+              <p>
+                I&#39;m sorry to hear that you&#39;ve received an error message
+                while attempting to access your myACCA account.
+              </p>
+              <br />
+              <p><strong>Troubleshoot</strong></p>
+              <p>
+                I suggest that you delete your temporary internet files and
+                cookies. You can refer to this video on how to clear your cache.
+              </p>
+              <p>
+                You can also try accessing our website on a different device or
+                web browser.
+              </p>
+              <p>
+                If the issue persists or you receive any error messages, please
+                provide me with a screenshot (using the print screen function on
+                your keyboard) and I&#39;ll have our IT department investigate.
+              </p>
+              <p>
+                Thank you for providing me with the screenshot of the error. I
+                will raise this with our specialist IT team and update you via
+                email as soon as we have more information.
+              </p>
+              <br />
+              <p><strong>Appreciate for highlighting this issue</strong></p>
+              <p>
+                Thank you for bringing this to our attention, we appreciate your
+                patience while we work to resolve the issue.
+              </p>
+              <br />
+              <p><strong>Resolved Sub-code Error</strong></p>
+              <p>
+                I&#39;m pleased to inform you that I have resolved the error on
+                your account. Please confirm if you&#39;re able to access your
+                account now. If you continue to experience any issues, please
+                let me know&nbsp;and I&#39;ll have our IT department
+                investigate.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card" id="Re-registration">
-        <div class="card-header" id="headingreregistration" type="button" data-toggle="collapse"
-          data-target="#collapserereg" aria-expanded="false" aria-controls="collapserereg">
-          <text class="btn bg-transparent">Re-registration</text>
-        </div>
-        <div id="collapserereg" class="collapse" aria-labelledby="headingreregistration" data-parent="#toggleList">
-          <div class="card-body">
-            <p><strong>Re-registration for Remote Session Exams</strong></p>
-            <p>
-              I am pleased to take you through the re-registration process. To
-              book or sit an exam, you must re-register, which involves paying
-              a re-registration fee and any outstanding fees from when you
-              were removed from the register. If you have no outstanding fees,
-              only the re-registration fee is required.
-            </p>
-            <br />
-            <p><strong>Account Suspension</strong></p>
-            <p>
-              I apologise for the inconvenience, but we noticed that your
-              account has been suspended due to non-payment of ACCA fees. You
-              will need to pay the re-registration fee and any outstanding
-              balance of your account to re-register with us. The outstanding
-              balance at the time of removal was XX GBP, and the total amount
-              required to re-register is XX GBP.
-            </p>
-            <br />
-            <p>
-              <strong>ACCA Exchange Employers or Approved Partners</strong>
-            </p>
-            <p>
-              If you work for an ACCA exchange employer or approved partner,
-              please contact your company first before re-registering with us.
-            </p>
-            <br />
-            <p><strong>Residents of Joint Scheme Countries</strong></p>
-            <p>
-              If you live in a country where ACCA works in partnership with a
-              local accountancy body, you need to re-register with them first
-              and they will forward your re-registration request to us. Please
-              read the
-              <a href="https://www.accaglobal.com/gb/en/footer-toolbar/contact-us/jes.html">information for residents of
-                joint scheme countries</a>
-              before proceeding.
-            </p>
-            <br />
-            <p><strong>Ready to Re-Register?</strong></p>
-            <p>
-              If you&#39;re ready to re-register and pay with a debit/credit
-              card, please call ACCA Connect at +44 (0) 141 582 2000. You will
-              need to provide your ACCA registration number, email address,
-              mailing address, and a valid credit/debit card in your name.
-              Once the payment is made, your account will be re-activated
-              immediately, and you can access myACCA and book exams again.
-              Alternatively you can do bank transfer using the details
-              <a href="https://www.accaglobal.com/gb/en/member/membership/managing/pay-your-subscription.html">here</a>
-              or we can re-activate your myACCA account temporarily for you to
-              make the payment.
-            </p>
+        <div class="card" id="Re-registration">
+          <div
+            class="card-header"
+            id="headingreregistration"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapserereg"
+            aria-expanded="false"
+            aria-controls="collapserereg"
+          >
+            <text class="btn bg-transparent">Re-registration</text>
+          </div>
+          <div
+            id="collapserereg"
+            class="collapse"
+            aria-labelledby="headingreregistration"
+            data-parent="#toggleList"
+          >
+            <div class="card-body">
+              <p><strong>Re-registration for Remote Session Exams</strong></p>
+              <p>
+                I am pleased to take you through the re-registration process. To
+                book or sit an exam, you must re-register, which involves paying
+                a re-registration fee and any outstanding fees from when you
+                were removed from the register. If you have no outstanding fees,
+                only the re-registration fee is required.
+              </p>
+              <br />
+              <p><strong>Account Suspension</strong></p>
+              <p>
+                I apologise for the inconvenience, but we noticed that your
+                account has been suspended due to non-payment of ACCA fees. You
+                will need to pay the re-registration fee and any outstanding
+                balance of your account to re-register with us. The outstanding
+                balance at the time of removal was XX GBP, and the total amount
+                required to re-register is XX GBP.
+              </p>
+              <br />
+              <p>
+                <strong>ACCA Exchange Employers or Approved Partners</strong>
+              </p>
+              <p>
+                If you work for an ACCA exchange employer or approved partner,
+                please contact your company first before re-registering with us.
+              </p>
+              <br />
+              <p><strong>Residents of Joint Scheme Countries</strong></p>
+              <p>
+                If you live in a country where ACCA works in partnership with a
+                local accountancy body, you need to re-register with them first
+                and they will forward your re-registration request to us. Please
+                read the
+                <a
+                  href="https://www.accaglobal.com/gb/en/footer-toolbar/contact-us/jes.html"
+                  >information for residents of joint scheme countries</a
+                >
+                before proceeding.
+              </p>
+              <br />
+              <p><strong>Ready to Re-Register?</strong></p>
+              <p>
+                If you&#39;re ready to re-register and pay with a debit/credit
+                card, please call ACCA Connect at +44 (0) 141 582 2000. You will
+                need to provide your ACCA registration number, email address,
+                mailing address, and a valid credit/debit card in your name.
+                Once the payment is made, your account will be re-activated
+                immediately, and you can access myACCA and book exams again.
+                Alternatively you can do bank transfer using the details
+                <a
+                  href="https://www.accaglobal.com/gb/en/member/membership/managing/pay-your-subscription.html"
+                  >here</a
+                >
+                or we can re-activate your myACCA account temporarily for you to
+                make the payment.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card" id="Handoffs">
-        <div class="card-header" id="headinghandoffs" type="button" data-toggle="collapse"
-          data-target="#collapsehandoffs" aria-expanded="false" aria-controls="collapsehandoffs">
-          <text class="btn bg-transparent">Handoffs</text>
-        </div>
-        <div id="collapsehandoffs" class="collapse" aria-labelledby="headinghandoffs" data-parent="#toggleList">
-          <div class="card-body">
-            <p>
-              Thank you for contacting ACCA. If you have any further queries,
-              please do not hesitate to contact us. Have a good day.
-            </p>
-            <br />
-            <p>
-              As there is no response from your side, I'll have to disconnect
-              this chat. Thank you for contacting ACCA.
-            </p>
+        <div class="card" id="Handoffs">
+          <div
+            class="card-header"
+            id="headinghandoffs"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsehandoffs"
+            aria-expanded="false"
+            aria-controls="collapsehandoffs"
+          >
+            <text class="btn bg-transparent">Handoffs</text>
+          </div>
+          <div
+            id="collapsehandoffs"
+            class="collapse"
+            aria-labelledby="headinghandoffs"
+            data-parent="#toggleList"
+          >
+            <div class="card-body">
+              <p><strong>Assurance</strong></p>
+              <p>
+                In the meantime, please be assured that we are working on
+                resolving your issue as soon as possible. We appreciate your
+                patience.
+              </p>
+              <br />
+              <p><strong>Student Support Team Handoff</strong></p>
+              <p>
+                I will forward your request to our Student Support Team, who
+                will look into your issue/request/query and get back to you
+                within 7-10 working days.&nbsp;
+              </p>
+              <br />
+              <p><strong>Student Support Exemptions Team Handoff</strong></p>
+              <p>
+                I will forward your request to our Student Support Exemptions
+                Team, who will look review your documents and get back to you
+                within 7-10 working days.&nbsp;
+              </p>
+              <br />
+              <p><strong>Finance Team Handoff</strong></p>
+              <p>
+                I will forward your request to our Finance Team, who will look
+                into your account and assist you further. They'll get back to
+                you within 7-10 working days.
+              </p>
+              <br />
+              <p><strong>Exams Department Handoff</strong></p>
+              <p>
+                I will forward your request to our Exams Department, who will
+                assist you further with your exam query and get back to you
+                within 7-10 working days.&nbsp;
+              </p>
+              <br />
+              <p><strong>Member Support Team Handoff</strong></p>
+              <p>
+                I will forward your request to our Member Support Team, who will
+                assist you regarding your query. They'll get back to you within
+                7-10 working days.
+              </p>
+              <br />
+              <p><strong>Business Relations Team Handoff</strong></p>
+              <p>
+                I will forward your request to our Business Relations Team, who
+                will look into your issue and get back to you within 7-10
+                working days.
+              </p>
+              <br />
+              <p><strong>IT Support Team Handoff (IT Ticket)</strong></p>
+              <p>
+                I will forward your request to our IT Support Team, who will
+                look into your issue and get back to you within 7-10 working
+                days. Please be patient while we investigate your request. We
+                appreciate your patience and understanding.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card" id="Closing">
-        <div class="card-header" id="headingclosing" type="button" data-toggle="collapse" data-target="#collapseclosing"
-          aria-expanded="false" aria-controls="collapseclosing">
-          <text class="btn bg-transparent">Closing</text>
-        </div>
-        <div id="collapseclosing" class="collapse" aria-labelledby="headingclosing" data-parent="#toggleList">
-          <div class="card-body">
-            <p>Is there anything else I can do for you today?</p>
-            <br />
-            <p>
-              Thank you for contacting ACCA. If you have any further queries,
-              please do not hesitate to contact us. Have a great day!
-            </p>
-            <br />
-            <p>
-              As there is no response from your side, I'll have to disconnect
-              this chat. Thank you for contacting ACCA.
-            </p>
+        <div class="card" id="Closing">
+          <div
+            class="card-header"
+            id="headingclosing"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseclosing"
+            aria-expanded="false"
+            aria-controls="collapseclosing"
+          >
+            <text class="btn bg-transparent">Closing</text>
+          </div>
+          <div
+            id="collapseclosing"
+            class="collapse"
+            aria-labelledby="headingclosing"
+            data-parent="#toggleList"
+          >
+            <div class="card-body">
+              <p>Is there anything else I can do for you today?</p>
+              <br />
+              <p>
+                Thank you for contacting ACCA. If you have any further queries,
+                please do not hesitate to contact us. Have a great day!
+              </p>
+              <br />
+              <p>
+                As there is no response from your side, I'll have to disconnect
+                this chat. Thank you for contacting ACCA.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card" id="Registration">
-        <div class="card-header" id="headingregistration" type="button" data-toggle="collapse"
-          data-target="#collapseregistration" aria-expanded="false" aria-controls="collapseregistration">
-          <text class="btn bg-transparent">Registration</text>
-        </div>
-        <div id="collapseregistration" class="collapse" aria-labelledby="headingregistration" data-parent="#toggleList">
-          <div class="card-body">
-            <p><strong>Registration Process for ACCA</strong></p>
-            <p>
-              You can register online at any time of the year to become an
-              ACCA student. Applying online allows you to upload all your
-              supporting documents, ensuring a faster application process.
-              Remember to include all supporting documents at the time of
-              registration to avoid delays.
-            </p>
-            <br />
-            <p><strong>Entry Requirements for ACCA Qualification</strong></p>
-            <p>
-              The minimum entry requirements for the ACCA Qualification are
-              two A-Levels and three GCSEs (or their equivalent) in five
-              separate subjects, including English and maths. Check if your
-              qualifications meet the minimum entry requirements by visiting
-              the minimum entrance requirements database.
-            </p>
-            <br />
-            <p><strong>Entry Requirements for Foundation-level</strong></p>
-            <p>
-              There are no minimum entry requirements to start at any level.
-              Still, it&#39;s recommended to start with the ACCA Diploma in
-              Financial and Management Accounting (RQF Level 2) if you have no
-              formal qualifications. This will help you perform better in
-              higher-level exams.
-            </p>
-            <br />
-            <p><strong>Documents Required for Registration</strong></p>
-            <p>
-              You must provide documents supporting your educational
-              achievements, proof of identity, and translations of your
-              documents (if they are not in English). Official translations
-              must be stamped by a licensed translator. You can upload all
-              your documents during the online application process.
-            </p>
-            <br />
-            <p><strong>Registration Process Timeline</strong></p>
-            <p>
-              The online application should take no more than 10 minutes to
-              complete, and you should be registered as a student within
-              5&ndash;7 working days if you complete the application fully
-              online and provide all the required documents. If you have to
-              send documents or payment by post, you should be registered
-              within 10 working days.
-            </p>
-            <br />
-            <p><strong>Fees Payable</strong></p>
-            <p>
-              A subscription fee is charged in addition to the initial
-              registration fee in your first year as an ACCA student if you
-              are eligible to sit at two or more exam sessions in a calendar
-              year. Thereafter, the annual subscription fee is due and payable
-              on or before 1 January each year you wish to remain an active
-              student. Tuition fees are separate and paid directly to the
-              tuition provider. For more information on exam entry fees, visit
-              the apply now page in the Related Links.
-            </p>
-            <br />
-            <p><strong>Payment Required for Registration</strong></p>
-            <p>
-              To finalise your registration for remote session exams, you need
-              to pay the relevant fee. Until then, you won&#39;t receive
-              official confirmation and won&#39;t be able to attempt any
-              exams. We advise against booking tuition until your registration
-              is confirmed.
-            </p>
+        <div class="card" id="Registration">
+          <div
+            class="card-header"
+            id="headingregistration"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseregistration"
+            aria-expanded="false"
+            aria-controls="collapseregistration"
+          >
+            <text class="btn bg-transparent">Registration</text>
+          </div>
+          <div
+            id="collapseregistration"
+            class="collapse"
+            aria-labelledby="headingregistration"
+            data-parent="#toggleList"
+          >
+            <div class="card-body">
+              <p><strong>Registration Process for ACCA</strong></p>
+              <p>
+                You can register online at any time of the year to become an
+                ACCA student. Applying online allows you to upload all your
+                supporting documents, ensuring a faster application process.
+                Remember to include all supporting documents at the time of
+                registration to avoid delays.
+              </p>
+              <br />
+              <p><strong>Entry Requirements for ACCA Qualification</strong></p>
+              <p>
+                The minimum entry requirements for the ACCA Qualification are
+                two A-Levels and three GCSEs (or their equivalent) in five
+                separate subjects, including English and maths. Check if your
+                qualifications meet the minimum entry requirements by visiting
+                the minimum entrance requirements database.
+              </p>
+              <br />
+              <p><strong>Entry Requirements for Foundation-level</strong></p>
+              <p>
+                There are no minimum entry requirements to start at any level.
+                Still, it&#39;s recommended to start with the ACCA Diploma in
+                Financial and Management Accounting (RQF Level 2) if you have no
+                formal qualifications. This will help you perform better in
+                higher-level exams.
+              </p>
+              <br />
+              <p><strong>Documents Required for Registration</strong></p>
+              <p>
+                You must provide documents supporting your educational
+                achievements, proof of identity, and translations of your
+                documents (if they are not in English). Official translations
+                must be stamped by a licensed translator. You can upload all
+                your documents during the online application process.
+              </p>
+              <br />
+              <p><strong>Registration Process Timeline</strong></p>
+              <p>
+                The online application should take no more than 10 minutes to
+                complete, and you should be registered as a student within
+                5&ndash;7 working days if you complete the application fully
+                online and provide all the required documents. If you have to
+                send documents or payment by post, you should be registered
+                within 10 working days.
+              </p>
+              <br />
+              <p><strong>Fees Payable</strong></p>
+              <p>
+                A subscription fee is charged in addition to the initial
+                registration fee in your first year as an ACCA student if you
+                are eligible to sit at two or more exam sessions in a calendar
+                year. Thereafter, the annual subscription fee is due and payable
+                on or before 1 January each year you wish to remain an active
+                student. Tuition fees are separate and paid directly to the
+                tuition provider. For more information on exam entry fees, visit
+                the apply now page in the Related Links.
+              </p>
+              <br />
+              <p><strong>Payment Required for Registration</strong></p>
+              <p>
+                To finalise your registration for remote session exams, you need
+                to pay the relevant fee. Until then, you won&#39;t receive
+                official confirmation and won&#39;t be able to attempt any
+                exams. We advise against booking tuition until your registration
+                is confirmed.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card" id="Exemptions">
-        <div class="card-header" id="headingexemptions" type="button" data-toggle="collapse"
-          data-target="#collapseexemptions" aria-expanded="false" aria-controls="collapseexemptions">
-          <text class="btn bg-transparent">Exemptions</text>
-        </div>
-        <div id="collapseexemptions" class="collapse" aria-labelledby="headingexemptions" data-parent="#toggleList">
-          <div class="card-body">
-            <p><strong>Exemptions Overview</strong></p>
-            <p>
-              If you already have certain qualifications, you may be eligible
-              for exemptions from some of our exams. However, please note that
-              exemptions are not awarded until after your education
-              documentation has been assessed and your registration
-              application completed. For more information, please visit our
-              exemption FAQs.
-            </p>
-            <br />
-            <p><strong>Exemptions Calculator</strong></p>
-            <p>
-              You can use our Exemptions calculator to get an idea of what
-              exemptions you might receive based on the qualifications you
-              already have. However, please note that exemptions shown on
-              exemptions calculator are not guranteed as they provide a
-              preliminaru assessmen and will be confirmed only after your
-              education documentation has been assessed by our exemptions
-              team.
-            </p>
-            <br />
-            <p><strong>Exemption Assessment</strong></p>
-            <p>
-              Your exemption eligibility will be assessed as part of your
-              online application. Please ensure that all necessary information
-              is provided and that your education documentation is up-to-date.
-              Exemptions are not awarded until after your education
-              documentation has been assessed and your registration
-              application completed.
-            </p>
-            <br />
-            <p><strong>Exemption Confirmation</strong></p>
-            <p>
-              If you are awarded exemptions, you will receive confirmation of
-              these along with your registration confirmation. Please note
-              that exemptions are not awarded until after your education
-              documentation has been assessed and your registration
-              application completed.
-            </p>
+        <div class="card" id="Exemptions">
+          <div
+            class="card-header"
+            id="headingexemptions"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseexemptions"
+            aria-expanded="false"
+            aria-controls="collapseexemptions"
+          >
+            <text class="btn bg-transparent">Exemptions</text>
           </div>
+          <div
+            id="collapseexemptions"
+            class="collapse"
+            aria-labelledby="headingexemptions"
+            data-parent="#toggleList"
+          >
+            <div class="card-body">
+              <p><strong>Exemptions Overview</strong></p>
+              <p>
+                If you already have certain qualifications, you may be eligible
+                for exemptions from some of our exams. However, please note that
+                exemptions are not awarded until after your education
+                documentation has been assessed and your registration
+                application completed. For more information, please visit our
+                exemption FAQs.
+              </p>
+              <br />
+              <p><strong>Exemptions Calculator</strong></p>
+              <p>
+                You can use our Exemptions calculator to get an idea of what
+                exemptions you might receive based on the qualifications you
+                already have. However, please note that exemptions shown on
+                exemptions calculator are not guranteed as they provide a
+                preliminaru assessmen and will be confirmed only after your
+                education documentation has been assessed by our exemptions
+                team.
+              </p>
+              <br />
+              <p><strong>Exemption Assessment</strong></p>
+              <p>
+                Your exemption eligibility will be assessed as part of your
+                online application. Please ensure that all necessary information
+                is provided and that your education documentation is up-to-date.
+                Exemptions are not awarded until after your education
+                documentation has been assessed and your registration
+                application completed.
+              </p>
+              <br />
+              <p><strong>Exemption Confirmation</strong></p>
+              <p>
+                If you are awarded exemptions, you will receive confirmation of
+                these along with your registration confirmation. Please note
+                that exemptions are not awarded until after your education
+                documentation has been assessed and your registration
+                application completed.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="remoteexams">
+            <div
+              class="card-header"
+              id="headingremoteexams"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseremoteexams"
+              aria-expanded="false"
+              aria-controls="collapseremoteexams"
+            >
+              <text class="btn bg-transparent">Remote Session Exams</text>
+            </div>
+            <div
+              id="collapseremoteexams"
+              class="collapse"
+              aria-labelledby="headingremoteexams"
+              data-parent="#toggleList"
+            >
+              <div class="card-body">
+                <p><strong>Scrap Paper</strong></p>
+                <p>
+                  For exam security, scrap paper is not allowed on the desk during remote session exams. You can use the digital scratchpad provided within the exam platform to make rough notes instead.
+                </p>
+                <br />
+                <p><strong>Exam Security</strong></p>
+                <p>
+                  Remote session CBEs are remotely invigilated with students being viewed on screen by an invigilator at all times. We also implement various exam security measures to maintain the rigour and integrity of the exams.
+                </p>
+                <br />
+                <p><strong>Zoom Text Tool for Vision Impaired Students</strong></p>
+                <p>
+                  The Zoom Text tool is only available on devices using a Windows operating system that meet the minimum technical requirements. Unfortunately, it is not available on MAC devices. Vision impaired students authorized to use the tool should keep this in mind before the exam.
+                </p>
+              </div>
+            </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-<script>
-  $(document).ready(function () {
-    $("#toggle-collapse").click(function () {
-      $(".collapse").toggleClass("show");
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#toggle-collapse").click(function () {
+        $(".collapse").toggleClass("show");
+      });
     });
-  });
-</script>
-
+  </script>
 </html>
 <!-- <div class="card" Class="Withdrawal">
 				<div class="card-header" id="heading2">
