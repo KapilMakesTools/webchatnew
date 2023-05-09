@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Webchat Templates by Kapil Pidhwani" />
-    <title>Webchat Teamplates</title>
+    <meta name="description" content="Work Centre by Kapil Pidhwani" />
+    <title>Work Centre</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
@@ -144,6 +144,43 @@
             background-color: #000;
             color: #fff;
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .iframe-container {
+            width: 50%;
+            padding: 0px;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        .iframe-container-email {
+            width: 100%;
+            padding: 0px;
+        }
+
+        .iframe-container-email iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .iframe-container {
+                width: 100%;
+            }
+        }
     </style>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -161,651 +198,978 @@
 
 <body>
     <div class="container">
-        <h1>Work Database</h1>
+        <h1>Work Centre</h1>
         <h3>Made by Kapil Pidhwani</h3>
         <label class="switch" for="toggle-collapse">
             <input type="checkbox" id="toggle-collapse" />
             <span class="slider round"></span>
         </label>
         <div class="accordion" id="toggleList">
-            <div class="card" id="singletemplate">
-                <div class="card-header" id="headingsingletemplate" type="button" data-toggle="collapse"
-                    data-target="#collapsesingletemplate" aria-expanded="false" aria-controls="collapsesingletemplate">
-                    <text class="btn bg-transparent">Single opening Template</text>
+            <div class="card" id="essentials">
+                <div class="card-header" id="headingessentials" type="button" data-toggle="collapse"
+                    data-target="#collapseessentials" aria-expanded="false" aria-controls="collapseessentials">
+                    <text class="btn bg-transparent">Essentials</text>
                 </div>
-                <div id="collapsesingletemplate" class="collapse" aria-labelledby="headingsingletemplate"
+                <div id="collapseessentials" class="collapse" aria-labelledby="headingessentials"
                     data-parent="#toggleList">
                     <div class="card-body">
-                        <p><strong>Heading</strong></p>
-                        <p>
-                            Content
-                        </p>
-                        <br />
+                        <div class="iframe-container-email">
+                            <iframe src="https://indify.co/widgets/live/counter/9399UQ3U2YfvJRy2qUgq"></iframe>
+                        </div>
+                        <div class="wrapper">
+                            <div class="iframe-container">
+                                <iframe src="https://indify.co/widgets/live/clock/WTo6GvRDIDQ1MSBYN3Mn"></iframe>
+                            </div>
+                            <div class="iframe-container">
+                                <iframe src="https://indify.co/widgets/live/clock/cOP1xwI3Cm1vbpzANpJE"></iframe>
+                            </div>
+                        </div>
+                    </div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="withdrawal">
-                <div class="card-header" id="headingwithdrawal" type="button" data-toggle="collapse"
-                    data-target="#collapsewithdrawal" aria-expanded="false" aria-controls="collapsewithdrawal">
-                    <text class="btn bg-transparent">Exam Withdrawal (WTD)</text>
-                </div>
-                <div id="collapsewithdrawal" class="collapse" aria-labelledby="headingwidhdrawal"
-                    data-parent="#toggleList">
-                    <div class="card-body">
-                        <table cellpadding="5" cellspacing="1" border="1">
-                            <tbody>
-                                <tr>
-                                    <td style="width: 10.8814%;">Answer ID</td>
-                                    <td style="width: 44.6879%;">Summary</td>
-                                    <td>Question</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">199</td>
-                                    <td style="width: 44.6879%;">Exam Withdrawal Request</td>
-                                    <td>How do I withdraw my exam entry before standard entry closing date?</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">207</td>
-                                    <td style="width: 44.6879%;">Exam Withdrawal Request - Evidence Required Illness
-                                    </td>
-                                    <td>Exam Withdrawal Request - Evidence Required Illness</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">208</td>
-                                    <td style="width: 44.6879%;">Exam Withdrawal - Granted</td>
-                                    <td>Exam Withdrawal - Granted</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">209</td>
-                                    <td style="width: 44.6879%;">Exam Withdrawal - Rejected</td>
-                                    <td>Exam Withdrawal - Rejected</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">273</td>
-                                    <td style="width: 44.6879%;">Exam Withdrawal - Non-specific request</td>
-                                    <td>Exam Withdrawal - Non-specific request</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">1406</td>
-                                    <td style="width: 44.6879%;">Rejected Withdrawal Complaint - Level 2 and Team
-                                        Managers</td>
-                                    <td>Rejected Withdrawal Complaint - Level 2 and Team Managers</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">1742</td>
-                                    <td style="width: 44.6879%;">Exam Withdrawal - Evidence Required Breavement</td>
-                                    <td>Exam Withdrawal - Evidence Required Breavement</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">3460</td>
-                                    <td style="width: 44.6879%;">Remote Invigilation (RI) exam withdrawn due to issues
-                                        experienced</td>
-                                    <td>Remote Invigilation (RI) exam withdrawn due to issues experienced</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">3488</td>
-                                    <td style="width: 44.6879%;">Exam Severe technical issues. Rebook for week 2 or
-                                        withdraw. RI session</td>
-                                    <td>Rebook for week 2 or withdraw RI session</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">3782</td>
-                                    <td style="width: 44.6879%;">Why can&apos;t I withdraw my exam? - MST</td>
-                                    <td>Why can&apos;t I withdraw my exam?</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">3876</td>
-                                    <td style="width: 44.6879%;">Exam Withdrawal - Signposting</td>
-                                    <td>Exam Withdrawal - Signposting</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">3877</td>
-                                    <td style="width: 44.6879%;">Exam Withdrawal - Available RI option</td>
-                                    <td>Exam Withdrawal - Available RI option</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 10.8814%;">3878</td>
-                                    <td style="width: 44.6879%;">Exam Withdrawal - Covid 19</td>
-                                    <td>Exam Withdrawal - Covid 19</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <br>
-                        <p><strong>How can I withdraw my exam entry before the standard entry closing date?
-                                #199</strong></p>
-                        <p>You can withdraw your entry up until the standard
-                            entry closing date for the relevant exam session. To withdraw your exam entry:</p>
-                        <ul>
-                            <li>
-                                <p>Login to myACCA</p>
-                            </li>
-                            <li>
-                                <p>On the left select&nbsp;My qualification&nbsp;(if using a mobile device
-                                    select&nbsp;Menu&nbsp;from the top left corner)</p>
-                            </li>
-                            <li>
-                                <p>Under&nbsp;Exams&nbsp;click on the red&nbsp;Book an exam&nbsp;button</p>
-                            </li>
-                            <li>
-                                <p>The exam entry planner should now open</p>
-                            </li>
-                            <li>
-                                <p>Look for the red button which says&nbsp;view exam entry&nbsp;and click this and you
-                                    should see your booking</p>
-                            </li>
-                            <li>
-                                <p>You should then be able to cancel your booking.</p>
-                            </li>
-                        </ul>
-                        <p>Within 48 hours, you&apos;ll receive an email confirming the withdrawal of the exam(s).</p>
-                        <p>Any fees paid will be credited back to your myACCA and can be used towards your next exam
-                            booking.</p>
-                        <br />
-                        <p><strong>What evidence is required for exam withdrawal due to illness? #207</strong></p>
-                        <p>To withdraw from an exam due to illness, please provide an officially stamped medical letter
-                            or report from a doctor/GP/hospital/medical centre.&nbsp;</p>
-                        <p>The documents should include the date(s) of illness that prevented you from attending the
-                            exam.&nbsp;</p>
-                        <p>If the documents are in a language other than English, we require both the original language
-                            documents and an official translation to English (signed and stamped by the translator).
-                            Please make sure to contact us before the withdrawal deadline date with the relevant
-                            documentation.</p>
-                        <br />
-                        <p><strong>How can I contact ACCA to withdraw from an exam due to illness? #207</strong></p>
-                        <p>To withdraw from an exam due to illness, please use the withdrawal option on the Contact Us
-                            form to speak to a representative via webchat. We can review your case and give you an
-                            update within minutes.</p>
-                        <br />
-                        <p><strong>What happens if my request for exam withdrawal due to illness is granted?
-                                #207</strong></p>
-                        <p>If your request for exam withdrawal due to illness is granted, the fees will be returned to
-                            your myACCA account to use towards payment for the next exam you take, or we can arrange to
-                            refund the exam fee to your payment card.</p>
-                        <br />
-                        <p><strong>What happens when my exam withdrawal request is granted? #208</strong></p>
-                        <p>When your exam withdrawal request is granted, your fee will be credited to your myACCA
-                            account, and you should not attend the exam under any circumstances. If you&apos;d like to
-                            enter for the next exam session, you can do so via your myACCA account. Please make sure
-                            you&apos;re aware of the booking deadline dates.</p>
-                        <p><br></p>
-                        <p><strong>What if I attend the exam after my withdrawal request is granted? #208</strong></p>
-                        <p>If you attend the exam after your withdrawal request is granted, you will be liable to pay
-                            additional fees.</p>
-                        <p><br></p>
-                        <p><strong>Can I take my exam remotely in the future if I am unwell? #208</strong></p>
-                        <p>Yes, you might be able to take your exam remotely in the future if you are unwell. Visit the
-                            ACCA Global website for more information on our remote exams.</p>
-                        <p><br></p>
-                        <p><strong>What if my condition affects my ability to sit exams moving forward? #208</strong>
-                        </p>
-                        <p>If your condition may affect your ability to sit exams moving forward, please visit the
-                            website for information on requesting additional support during your examinations. Best of
-                            luck with your studies!</p>
-                        <br>
-                        <p><strong>What if my exam withdrawal request has been rejected? #209</strong></p>
-                        <p>We&apos;re sorry to hear that your request has been rejected. We can only process requests
-                            for serious extenuating circumstances supported by documentary evidence.</p>
-                        <p><br></p>
-                        <p><strong>What will happen to my exam fee? #209</strong></p>
-                        <p>Unfortunately, as your request has been rejected, your exam fee cannot be refunded.</p>
-                        <p><br></p>
-                        <p><strong>What if I want to enter for this exam in the next session? #209</strong></p>
-                        <p>You can enter for the exam in the next session once the exam results are released.</p>
-                        <p><br></p>
-                        <p><strong>Will my absence from the exam be recorded? #209</strong></p>
-                        <p>Yes, as you didn&apos;t attend the exam, you&apos;ll be marked as absent on your transcript
-                            and myACCA account.</p>
-                        <p><br></p>
-                        <p><strong>Where can I find more information about exam cancellation? #209</strong></p>
-                        <p>You can find more information about exam cancellation in the Frequently Asked Questions
-                            section on the ACCA Global website.</p>
-                        <br />
-                        <p><strong>What should I do if I couldn&apos;t attend my exam due to exceptional reasons?
-                                #273</strong></p>
-                        <p>Use the withdrawal option on the contact us form to speak to a representative via webchat.
-                        </p>
-                        <p><br></p>
-                        <p><strong>What documents do I need to provide for consideration? #273</strong></p>
-                        <p>Relevant supporting documents such as an official medical letter or report from doctor / GP /
-                            hospital / medical centre. These documents must detail the date(s) of illness that prevented
-                            you from attending the exam or death certificate.</p>
-                        <p>If the documents are in a language other than English, a copy of the official translation to
-                            English is required.&nbsp;</p>
-                        <p><br></p>
-                        <p><strong>When is the deadline to submit the documents for withdrawal request? #273</strong>
-                        </p>
-                        <p>The documents must be received by XXXWITHDRAWAL DEADLINE DATE for the XXX session.</p>
-                        <p><br></p>
-                        <p><strong>What happens if my withdrawal request is granted? #273</strong></p>
-                        <p>The fees will be returned to your myACCA account to use towards payment for the next exam you
-                            take or we can arrange to refund the exam fee to your payment card.</p>
-                        <p><br></p>
-                        <p><strong>What kind of circumstances are considered for exam withdrawal? #273</strong></p>
-                        <p>Exam withdrawals will only be considered under the most extenuating circumstances and were
-                            supported by documentary evidence. Minor illnesses or workload issues, for example,
-                            can&rsquo;t be considered.</p>
-                        <p><br></p>
-                        <p><strong>Where can I find further information on exams? #273</strong></p>
-                        <p>For further information, please visit our students FAQs on exams page.</p>
-                        <p><br></p>
-                        <p><strong>Why was my exam refund request rejected? #1406</strong></p>
-                        <p>We&apos;re sorry to inform you that we&apos;re unable to offer a refund of your exam fee.</p>
-                        <p><br></p>
-                        <p><strong>Can you explain the reason behind the rejection of my request? #1406</strong></p>
-                        <p>Your exam fee is used to secure the arrangements, resources and costs involved in the exams
-                            process, and we can only consider the most extenuating circumstances in relation to absence
-                            from exams such as critical illness or bereavement. We conducted a full and thorough review
-                            of your request and supporting documentary evidence submitted.</p>
-                        <p><br></p>
-                        <p><strong>Is there anything that I can do about this decision? #1406</strong></p>
-                        <p>We&apos;d like to assure you that we&apos;ve applied the correct procedures in reaching this
-                            decision, and we can&apos;t reconsider the request. We kindly request you to accept this
-                            decision as final.</p>
-                        <p><br></p>
-                        <p><strong>What information do I need to provide to withdraw my exam due to a bereavement?
-                                #1742</strong></p>
-                        <p>We&apos;re very sorry for your loss. To withdraw your exam due to bereavement, you will need
-                            to provide evidence of your circumstances. Please use the withdrawal option on the contact
-                            us form to speak to a representative via webchat, where we can review your case and provide
-                            further assistance.</p>
-                        <p><br></p>
-                        <p><strong>What happens if the documents I submit are not in English? #1742</strong></p>
-                        <p>If the documents are issued in a language other than English, we require a copy of the
-                            original document(s) as well as a copy of the official translation to English, signed and
-                            stamped by the translator.</p>
-                        <p><br></p>
-                        <p><strong>How soon can I expect to receive an update on my case? #1742</strong></p>
-                        <p>We understand this is a difficult time for you, and we will review your case as soon as
-                            possible. Using our Contact us page and webchat option, we can review your case and give you
-                            an update within minutes. We hope you appreciate that we must adhere to policy when
-                            reviewing all exam withdrawal requests.</p>
-                        <p><br></p>
-                        <p><strong>What should I do if my RI exam has been withdrawn due to issues experienced?
-                                #3460</strong></p>
-                        <p>We apologize for the inconvenience caused. Your exam entry has been withdrawn and the fee
-                            paid has been credited to your myACCA account. The booking window is open for the XXXX exam
-                            session. Please note that the deadline is XXX and closes on XX at midnight UK time.</p>
-                        <p><br></p>
-                        <p><strong>What are the important system checks for RI exams? #3460</strong></p>
-                        <p>You must pass the mandatory system test (MST) from ACCA&rsquo;s Exam Planner ahead of
-                            starting the check-in process on exam day. You&apos;ll be prompted to run the test when you
-                            book your exam(s) and before starting your exam check-in process. Please complete another
-                            MST if a software update is performed on the device you intend to use for the exam. View
-                            minimum requirements.</p>
-                        <p><br></p>
-                        <p><strong>What should I do if I face technical issues during the RI exam? #3460</strong></p>
-                        <p>The most frequent causes of technical issues with online proctored exams are testing on a
-                            work computer, an unreliable internet connection, applications running in the background,
-                            and camera or mic settings being disabled or restricted privacy settings. Please contact
-                            Pearson VUE if you have any issues with your system test. ACCA Connect cannot assist with
-                            any system test technical issues.</p>
-                        <p><br></p>
-                        <p><strong>What should I do if my documents are issued in a language other than English?
-                                #3460</strong></p>
-                        <p>Please provide a copy of the original language document(s) and a copy of the official
-                            translation to English (signed and stamped by the translator). This must be received by XXX
-                            for the XXX session. Please use the withdrawal option on the contact us form to speak to a
-                            representative via webchat to help us process your request quickly.</p>
-                        <p><br></p>
-                        <p><strong>What are my options if I experienced technical issues during my RI exam session?
-                                #3488</strong></p>
-                        <p>You can either rebook for week 2 or withdraw from the exam and receive a credit for your exam
-                            fees.</p>
-                        <p><br></p>
-                        <p><strong>When can I rebook for week 2? #3488</strong></p>
-                        <p>The rebook option will be available 60 minutes after the exam was scheduled to start and 48
-                            hours prior to the exam in the contingency week.</p>
-                        <p><br></p>
-                        <p><strong>What should I do if the exam is not available within the contingency week?
-                                #3488</strong></p>
-                        <p>You may apply for an exam withdrawal if you meet the eligibility criteria.</p>
-                        <p><br></p>
-                        <p><strong>What are the eligibility criteria for exam withdrawal? #3488</strong></p>
-                        <p>You must have attempted to check-in for your exam, experienced a technical issue during your
-                            exam which impacted your ability to complete it, and have successfully passed the mandatory
-                            system test via Exam Planner within the set timeframe.</p>
-                        <p><br></p>
-                        <p><strong>Where can I find more information on post-exam options for remote exams?
-                                #3488</strong></p>
-                        <p>You can visit the website for more information and watch our step-by-step video guidance for
-                            support on withdrawing your exam.</p>
-                        <p><br></p>
-                        <p><strong>When can I withdraw my RI exam if the rebook option is available during the
-                                contingency week? #3782</strong></p>
-                        <p>You can only withdraw your exam once the rebook contingency exam date has passed (subject to
-                            meeting withdrawal eligibility criteria). Check the timetable for contingency exam dates and
-                            the withdrawal option will appear on the Exam Planner after this date until XX. You need to
-                            have attempted to check-in, experienced technical issues during the exam, and passed the
-                            mandatory system test within the set timeframe to be eligible for a withdrawal.</p>
-                        <p><br></p>
-                        <p><strong>Why am I unable to withdraw my RI exam if the rebook option is not available during
-                                the contingency week or contingency date has passed? #3782</strong></p>
-                        <p>Unfortunately, you do not meet the eligibility criteria to withdraw and receive an exam
-                            credit. To be eligible, you need to have attempted to check-in, experienced technical issues
-                            during the exam, and passed the mandatory system test within the set timeframe. You were
-                            notified of these criteria in our communications on the website, InSession support emails,
-                            and support webinars.</p>
-                        <p><br></p>
-                        <p><strong>Why can&apos;t I withdraw my exam? #3876</strong></p>
-                        <p>We&apos;re sorry to inform you that we cannot process your exam withdrawal request at this
-                            time. Our policy for withdrawals has returned to the standard policy where withdrawals will
-                            only be considered for serious extenuating circumstances and supported by documentary
-                            evidence.</p>
-                        <p><br></p>
-                        <p><strong>What if I don&apos;t attend the exam? #3876</strong></p>
-                        <p>If you don&apos;t attend the exam, you&apos;ll be marked as absent on your myACCA transcript.
-                        </p>
-                        <p><br></p>
-                        <p><strong>Can I enter for the exam in the next session? #3876</strong></p>
-                        <p>Yes, you can enter for the exam in the next session once the exam results have been released.
-                        </p>
-                        <p><br></p>
-                        <p><strong>Where can I find more information about exam cancellation? #3876</strong></p>
-                        <p>You can find more information about exam cancellation on our Frequently Asked Questions page
-                            on our website.</p>
-                        <p><br></p>
-                        <p><strong>What if I feel my performance was impacted during the exam due to my current
-                                situation? #3876</strong></p>
-                        <p>If you&apos;re able to attend the exam but feel that your performance was impacted, you can
-                            submit this information via our Mitigating Circumstances platform on myACCA for
-                            consideration during the marking process.</p>
-                        <p><br></p>
-                        <p><strong>Will I receive feedback on my exam experience? #3876</strong></p>
-                        <p>Yes, you will receive detailed personal feedback on your exam experience to help your
-                            understanding of your exam mark.</p>
-                        <p><br></p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="rereg">
-                <div class="card-header" id="headingrereg" type="button" data-toggle="collapse"
-                    data-target="#collapserereg" aria-expanded="false" aria-controls="collapserereg">
-                    <text class="btn bg-transparent">Re-Registration (RRG)</text>
-                </div>
-                <div id="collapserereg" class="collapse" aria-labelledby="headingrereg" data-parent="#toggleList">
-                    <div class="card-body">
-                        <table cellpadding="5" cellspacing="1" border="1">
-                            <tr>
-                                <td>Answer ID</td>
-                                <td>Summary</td>
-                                <td>Question</td>
-                            </tr>
-                            <tr>
-                                <td>1348</td>
-                                <td>Re-registration First Email Contact</td>
-                                <td>Re-registration First Email Contact</td>
-                            </tr>
-                            <tr>
-                                <td>1349</td>
-                                <td>Previously in a Joint Scheme</td>
-                                <td>Previously in a Joint Scheme</td>
-                            </tr>
-                            <tr>
-                                <td>1315</td>
-                                <td>Will I get my passes/exemptions back when I re-register?</td>
-                                <td>Will I get my passes/exemptions back when I re-register?</td>
-                            </tr>
-                            <tr>
-                                <td>1349</td>
-                                <td>Re-registration - Email Request Processed</td>
-                                <td>Re-registration - Email Request Processed</td>
-                            </tr>
-                            <tr>
-                                <td>1350</td>
-                                <td>Re-registration - Processed - Phone</td>
-                                <td>Re-registration - Processed - Phone</td>
-                            </tr>
-                            <tr>
-                                <td>1351</td>
-                                <td>Re-registration - Temp - Re-reg post call</td>
-                                <td>Re-registration - Temp - Re-reg post call</td>
-                            </tr>
-                            <tr>
-                                <td>1354</td>
-                                <td>Re-registration - Duplicate account ACCA/FIA</td>
-                                <td>Re-registration - Duplicate account ACCA/FIA</td>
-                            </tr>
-                            <tr>
-                                <td>1355</td>
-                                <td>Joint scheme re-reg fees</td>
-                                <td>How much is it to re-register via the Joint Scheme</td>
-                            </tr>
-                            <tr>
-                                <td>1614</td>
-                                <td>Email confirmation of re-reg</td>
-                                <td>Confirmation of Re-registration</td>
-                            </tr>
-                            <tr>
-                                <td>2014</td>
-                                <td>myACCA access after the re-reg</td>
-                                <td>Will my password for access to myACCA change when I re-register?</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </table>
-                        <br>
-                        <p><strong>I want to re-register as an ACCA student, what do I need to do? #1348</strong></p>
-                        <p>Great news! We&apos;re happy to have you back. To reactivate your account, you&apos;ll need
-                            to call ACCA Connect at +44(0)141 582 2000 to make a payment or reply to this message if
-                            you&apos;d like to proceed with temporary reactivation to make payments online.</p>
-                        <p><br></p>
-                        <p><strong>Why was my account suspended? #1348</strong></p>
-                        <p>Your account was suspended for (REASON).</p>
-                        <p><br></p>
-                        <p><strong>What is the outstanding balance on my account? #1348</strong></p>
-                        <p>At the time of removal, the outstanding balance on your account was XXX GBP.</p>
-                        <p><br></p>
-                        <p><strong>How much is the re-registration fee? #1348</strong></p>
-                        <p>The re-registration fee is XXX GBP.</p>
-                        <p><br></p>
-                        <p><strong>How can I make a payment? #1348</strong></p>
-                        <p>You can make a payment through bank transfer using the details provided below. Make sure to
-                            use your ACCA registration number as the payment reference and send a remittance/allocation
-                            list to ACCABankTransfer@accaglobal.com to
-                            avoid any payment issues.</p>
-                        <p><br></p>
-                        <p><strong>Can I pay online? #1348</strong></p>
-                        <p>Yes, we can reactivate your account temporarily to allow you to make payments online. Just
-                            let us know by replying to this chat.</p>
-                        <p><br></p>
-                        <p><strong>What are the exam entry closing dates? #1348</strong></p>
-                        <p>If you want to enter for an upcoming examination session, please familiarise yourself with
-                            the exam entry closing dates.</p>
-                        <p><br></p>
-                        <p><strong>I&apos;m a joint scheme student, what do I need to do? #1348</strong></p>
-                        <p>As you are resident in a country where we work in partnership with a local accountancy body
-                            as part of a Joint Education Scheme, you must re-register in accordance with the terms of
-                            the joint scheme. Find contact details of your local Joint examination scheme.</p>
-                        <p><br></p>
-                        <p><strong>Are there any updates to the terms and conditions since I joined? #1348</strong></p>
-                        <p>Since you joined, there may have been some updates to our terms and conditions. We ask that
-                            you review our online declaration that sets these out and which you agree to comply with as
-                            a student. In particular, if you&rsquo;ve not already done so, please promptly notify us in
-                            writing if you&rsquo;ve been, or subsequently become, subject to any matters which may
-                            engage Bye-law 8.</p>
-                        <p><br></p>
-                        <p><strong>Do I need to re-register as a joint scheme student if I was previously registered as
-                                part of a joint scheme? #1349</strong></p>
-                        <p>Yes, if you&apos;re resident in a country where ACCA operates as part of a Joint Examination
-                            Scheme, you must re-register in accordance with the terms of the joint scheme. You can find
-                            out how to re-register with your joint scheme and download the re-registration form on our
-                            website. You can also view the contact details for our Joint Examination Partnerships there.
-                        </p>
-                        <p><br></p>
-                        <p><strong>What should I do if I was removed for non-payment of JES fees or ACCA fees?
-                                #1349</strong></p>
-                        <p>If you were removed for non-payment of JES fees or ACCA fees, you may need to pay your
-                            outstanding fees with the JES. The JES will then email ACCA to confirm your re-registration
-                            and you will be able to call Connect and re-register over the phone.</p>
-                        <p><br></p>
-                        <p><strong>Will I get back my passes/exemptions when I re-register? #1315</strong></p>
-                        <p>Yes, you will retain your previous results, except for Professional level exams that may be
-                            expired due to the 7-year rule.</p>
-                        <p><br></p>
-                        <p><strong>What if I can&apos;t find my registration number? #1315</strong></p>
-                        <p>Try searching for the account using the client&apos;s name or email address. If you still
-                            can&apos;t find it, contact Student Support for help.</p>
-                        <p><br></p>
-                        <p><strong>What happens to my results if I completed the old syllabus? #1315</strong></p>
-                        <p>If you&apos;re no longer on file, you may not receive credit for all papers due to syllabus
-                            changes and time requirements. Contact Student Support to retrieve your records and confirm
-                            if any results can be converted to the current syllabus.</p>
-                        <p><br></p>
-                        <p><strong>Will my previously assessed qualifications be re-assessed upon re-registration?
-                                #1315</strong></p>
-                        <p>No, previously assessed qualifications will not be re-assessed upon re-registration.</p>
-                        <p><br></p>
-                        <p><strong>What is the status of my temporary re-activation request? #1349</strong></p>
-                        <p>Your myACCA account has been reopened, and we request you log in and pay the fees within 10
-                            days.</p>
-                        <p><br></p>
-                        <p><strong>What should I do if I forget my myACCA password? #1349</strong></p>
-                        <p>If you forget your password, you can click on &quot;Forgotten your password&quot; on the
-                            myACCA login page, enter your username, and follow the steps to reset your password.</p>
-                        <p><br></p>
-                        <p><strong>What are the password requirements for myACCA? #1349</strong></p>
-                        <p>Your new password must be at least eight characters long and contain one lowercase alphabetic
-                            character, one special character (e.g., ? !/ # ~@), one uppercase alphabetic character, and
-                            one numeric character.</p>
-                        <p><br></p>
-                        <p><strong>What will happen if I don&apos;t pay the fees within 10 days? #1349</strong></p>
-                        <p>If payment is not made within 10 days, your account will be re-suspended. This will not incur
-                            any further penalties, but you will still owe the same amount if you try to re-register
-                            within the same calendar year.</p>
-                        <p><br></p>
-                        <p><strong>I received an email about a duplicate account. What should I do? #1354</strong></p>
-                        <p>You have another student account with us that is currently suspended. To continue your
-                            studies, you need to pay the outstanding balance and re-registration fee. Since you&apos;ve
-                            already paid part of it, you only need to pay the remaining amount. Please confirm if you
-                            wish to proceed, and we&apos;ll arrange for your account to be re-registered.</p>
-                        <p><br></p>
-                        <p><strong>How much do I need to pay to re-register my account? #1354</strong></p>
-                        <p>You need to pay the outstanding balance and re-registration fee. If you&apos;ve already paid
-                            part of it, you only need to pay the remaining amount. The exact amount depends on your
-                            account status, which we can check if you provide your registration number. Please note that
-                            you have 10 working days to make payment upon re-registration.</p>
-                        <p><br></p>
-                        <p><strong>Can I make payment online after re-registration? #1354</strong></p>
-                        <p>Yes, once your account is re-registered, you&apos;ll be able to access your myACCA account
-                            again and make payments online. We&apos;ll apply the outstanding fees to your account, and
-                            you&apos;ll have 10 working days to make payment. If you fail to make payment, your account
-                            will be resuspended.</p>
-                        <p><br></p>
-                        <p><strong>What is the cost to re-register via the Joint Scheme? #1355</strong></p>
-                        <p>No payments made to Joint Schemes are reflected in myACCA. Please contact your local Joint
-                            Scheme for confirmation of any fees due to them.</p>
-                        <p><br></p>
-                        <p><strong>What should I do if I owe fees to my Joint Scheme? #1355</strong></p>
-                        <p>Please arrange payment to your Joint Scheme. Once payment is made, they will send us an email
-                            confirming your account is up to date with them. You&apos;ll receive a reference number for
-                            this email, at which point you can call ACCA Connect at +44 141 582 2000 and quote this
-                            number. After some checks, we&rsquo;ll then be able to proceed with your re-registration
-                            request.</p>
-                        <p><br></p>
-                        <p><strong>What fees do I need to pay to ACCA for re-registration? #1355</strong></p>
-                        <p>You&apos;ll need to pay a re-registration fee (same as the initial registration fee) to us,
-                            together with any fees that were outstanding when you left the register.</p>
-                        <p><br></p>
-                        <p><strong>What is my username and password for myACCA? #1614</strong></p>
-                        <p>Your username is your registration number and your password remains the same as before.</p>
-                        <p><br></p>
-                        <p><strong>What should I do if I forgot my myACCA password? #1614</strong></p>
-                        <p>Answer: Go to the forgotten password section on myACCA, answer the personal information
-                            questions, and a new password will be emailed to you within two hours.</p>
-                        <p><br></p>
-                        <p><strong>Can I book for any of the upcoming exam sessions? #1614</strong></p>
-                        <p>Yes, you can now book your exams again through the exam planner on your myACCA account.</p>
-                        <p><br></p>
-                        <p><strong>Where can I find the exam entry deadlines and fees and charges? #1614</strong></p>
-                        <p>You can view the exam entry deadlines and fees and charges on the ACCA website under the exam
-                            planner and price list sections.</p>
-                        <p><br></p>
-                        <p><strong>What resources are available to help me prepare for my exams? #1614</strong></p>
-                        <p>There is a wide range of resources available to help you prepare for your exams, such as
-                            accessing the syllabus and study guide, gaining insights from the Examining Team, or
-                            broadening your understanding of exam topics. Please see our exam resources for more
-                            information.</p>
-                        <p><br></p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="links">
-                <div class="card-header" id="headingsingletemplate" type="button" data-toggle="collapse"
-                    data-target="#collapselinks" aria-expanded="false" aria-controls="collapselinks">
-                    <text class="btn bg-transparent">Links</text>
-                </div>
-                <div id="collapselinks" class="collapse" aria-labelledby="headinglinks" data-parent="#toggleList">
-                    <div class="card-body">
-                        <p><a href="https://login.ciam.accaglobal.com/" target="_blank"
-                                rel="noopener noreferrer">myACCA</a></p>
-                        <p>https://login.ciam.accaglobal.com/</p>
-                        <p><br></p>
-                        <p><a href="https://www.accaglobal.com/uk/en/student/getting-started/important-dates.html"
-                                target="_blank" rel="noopener noreferrer">Important Dates</a></p>
-                        <p>https://www.accaglobal.com/uk/en/student/getting-started/important-dates.html</p>
-                        <p><br></p>
-                        <p><a href="https://forms.accaglobal.com/contact-us" target="_blank"
-                                rel="noopener noreferrer">Contant Us</a></p>
-                        <p>https://forms.accaglobal.com/contact-us</p>
-                        <p><br></p>
-                        <p><a href="https://www.accaglobal.com/" target="_blank" rel="noopener noreferrer">ACCA
-                                Global</a></p>
-                        <p>https://www.accaglobal.com/</p>
-                        <p><br></p>
-                        <p><a href="https://www.accaglobal.com/ie/en/student/exam-entry-and-administration/about-our-exams/remote-exams.html"
-                                target="_blank" rel="noopener noreferrer">Remote Exams Information</a></p>
-                        <p>https://www.accaglobal.com/ie/en/student/exam-entry-and-administration/about-our-exams/remote-exams.html
-                        </p>
-                        <p><br></p>
-                        <p><a href="https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/enter-an-exam/additional-support.html"
-                                target="_blank" rel="noopener noreferrer">Additional Support</a></p>
-                        <p>https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/enter-an-exam/additional-support.html
-                        </p>
-                        <p><br></p>
-                        <p><a href="https://www.accaglobal.com/gb/en/help/exam-sessions.html" target="_blank"
-                                rel="noopener noreferrer">Student&apos;s FAQs on Exams</a></p>
-                        <p>https://www.accaglobal.com/gb/en/help/exam-sessions.html</p>
-                        <p><br></p>
-                        <p><a href="https://home.pearsonvue.com/acca/onvue" target="_blank"
-                                rel="noopener noreferrer">Pearson VUE Website</a></p>
-                        <p>https://home.pearsonvue.com/acca/onvue</p>
-                        <p><br></p>
-                        <p><a href="https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/computer-based-exams/remote-session-exams/before-you-book.html"
-                                target="_blank" rel="noopener noreferrer">Minimum System Requirements</a></p>
-                        <p>https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/computer-based-exams/remote-session-exams/before-you-book.html
-                        </p>
-                        <p><br></p>
-                        <p><a href="https://www.accaglobal.com/gb/en/qualifications/accountancy-career/fees/fees-charges.html"
-                                target="_blank" rel="noopener noreferrer">Fees and Charges</a></p>
-                        <p>https://www.accaglobal.com/gb/en/qualifications/accountancy-career/fees/fees-charges.html</p>
-                        <p><br></p>
-                        <p><a href="https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/exam-timetables/remote-session-cbe-timetable.html"
-                                target="_blank" rel="noopener noreferrer">Remote Session CBE Timetable</a></p>
-                        <p>https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/exam-timetables/remote-session-cbe-timetable.html
-                        </p>
-                        <p><br></p>
-                        <p><a href="https://www.accaglobal.com/an/en/student/exam-entry-and-administration/about-our-exams/remote-exams/remote-session-exams/post-exam-options.html"
-                                target="_blank" rel="noopener noreferrer">Post Exam Options for Remote Exams</a></p>
-                        <p>https://www.accaglobal.com/an/en/student/exam-entry-and-administration/about-our-exams/remote-exams/remote-session-exams/post-exam-options.html
-                        </p>
-                        <p><br></p>
-                        <p><a href="https://www.accaglobal.com/vn/en/student/exam-entry-and-administration/exam-results/exam-performance/tips-and-advice.html"
-                                target="_blank" rel="noopener noreferrer">My Exam Performance Guidance</a></p>
-                        <p>https://www.accaglobal.com/vn/en/student/exam-entry-and-administration/exam-results/exam-performance/tips-and-advice.html
-                        </p>
-                        <p><br></p>
-                    </div>
                 </div>
             </div>
         </div>
+        <div class="card" id="cv">
+            <div class="card-header" id="headingcv" type="button" data-toggle="collapse" data-target="#collapsecv"
+                aria-expanded="false" aria-controls="collapsecv">
+                <text class="btn bg-transparent">Customer Verification (VER)</text>
+            </div>
+            <div id="collapsecv" class="collapse" aria-labelledby="headingcv" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="withdrawal">
+            <div class="card-header" id="headingwithdrawal" type="button" data-toggle="collapse"
+                data-target="#collapsewithdrawal" aria-expanded="false" aria-controls="collapsewithdrawal">
+                <text class="btn bg-transparent">Exam Withdrawal (WTD)</text>
+            </div>
+            <div id="collapsewithdrawal" class="collapse" aria-labelledby="headingwidhdrawal" data-parent="#toggleList">
+                <div class="card-body">
+                    <table cellpadding="5" cellspacing="1" border="1">
+                        <tbody>
+                            <tr>
+                                <td style="width: 10.8814%;">Answer ID</td>
+                                <td style="width: 44.6879%;">Summary</td>
+                                <td>Question</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">199</td>
+                                <td style="width: 44.6879%;">Exam Withdrawal Request</td>
+                                <td>How do I withdraw my exam entry before standard entry closing date?</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">207</td>
+                                <td style="width: 44.6879%;">Exam Withdrawal Request - Evidence Required Illness</td>
+                                <td>Exam Withdrawal Request - Evidence Required Illness</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">208</td>
+                                <td style="width: 44.6879%;">Exam Withdrawal - Granted</td>
+                                <td>Exam Withdrawal - Granted</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">209</td>
+                                <td style="width: 44.6879%;">Exam Withdrawal - Rejected</td>
+                                <td>Exam Withdrawal - Rejected</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">273</td>
+                                <td style="width: 44.6879%;">Exam Withdrawal - Non-specific request</td>
+                                <td>Exam Withdrawal - Non-specific request</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">1406</td>
+                                <td style="width: 44.6879%;">Rejected Withdrawal Complaint - Level 2 and Team Managers
+                                </td>
+                                <td>Rejected Withdrawal Complaint - Level 2 and Team Managers</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">1742</td>
+                                <td style="width: 44.6879%;">Exam Withdrawal - Evidence Required Breavement</td>
+                                <td>Exam Withdrawal - Evidence Required Breavement</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">3460</td>
+                                <td style="width: 44.6879%;">Remote Invigilation (RI) exam withdrawn due to issues
+                                    experienced</td>
+                                <td>Remote Invigilation (RI) exam withdrawn due to issues experienced</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">3488</td>
+                                <td style="width: 44.6879%;">Exam Severe technical issues. Rebook for week 2 or
+                                    withdraw. RI session</td>
+                                <td>Rebook for week 2 or withdraw RI session</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">3782</td>
+                                <td style="width: 44.6879%;">Why can&apos;t I withdraw my exam? - MST</td>
+                                <td>Why can&apos;t I withdraw my exam?</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">3876</td>
+                                <td style="width: 44.6879%;">Exam Withdrawal - Signposting</td>
+                                <td>Exam Withdrawal - Signposting</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">3877</td>
+                                <td style="width: 44.6879%;">Exam Withdrawal - Available RI option</td>
+                                <td>Exam Withdrawal - Available RI option</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 10.8814%;">3878</td>
+                                <td style="width: 44.6879%;">Exam Withdrawal - Covid 19</td>
+                                <td>Exam Withdrawal - Covid 19</td>
+                            </tr>
+                        </tbody>
+                    </table><br>
+                    <p><strong>How can I withdraw my exam entry before the standard entry closing date? #199</strong>
+                    </p>
+                    <p>You can withdraw your entry up until the standard entry closing date for the relevant exam
+                        session. To withdraw your exam entry:</p>
+                    <ul>
+                        <li>
+                            <p>Login to myACCA</p>
+                        </li>
+                        <li>
+                            <p>On the left select My Qualification (if using a mobile device select Menu from the top
+                                left corner)</p>
+                        </li>
+                        <li>
+                            <p>Under Exams click on the red Book an Exam button</p>
+                        </li>
+                        <li>
+                            <p>The exam entry planner should now open</p>
+                        </li>
+                        <li>
+                            <p>Look for the red button which says&nbsp;view exam entry&nbsp;and click this and you
+                                should see your booking</p>
+                        </li>
+                        <li>
+                            <p>You should then be able to cancel your booking.</p>
+                        </li>
+                    </ul>
+                    <p>Within 48 hours, you&apos;ll receive an email confirming the withdrawal of the exam(s).</p>
+                    <p>Any fees paid will be credited back to your myACCA and can be used towards your next exam
+                        booking.</p><br>
+                    <p><strong>What evidence is required for exam withdrawal due to illness? #207</strong></p>
+                    <p>To withdraw from an exam due to illness, please provide an officially stamped medical letter or
+                        report from a doctor/GP/hospital/medical centre.&nbsp;</p>
+                    <p>The documents should include the date(s) of illness that prevented you from attending the
+                        exam.&nbsp;</p>
+                    <p>If the documents are in a language other than English, we require both the original language
+                        documents and an official translation to English (signed and stamped by the translator). Please
+                        make sure to contact us before the withdrawal deadline date with the relevant documentation.</p>
+                    <br>
+                    <p><strong>How can I contact ACCA to withdraw from an exam due to illness? #207</strong></p>
+                    <p>To withdraw from an exam due to illness, please use the withdrawal option on the Contact Us form
+                        to speak to a representative via webchat. We can review your case and give you an update within
+                        minutes.</p><br>
+                    <p><strong>What happens if my request for exam withdrawal due to illness is granted? #207</strong>
+                    </p>
+                    <p>If your request for exam withdrawal due to illness is granted, the fees will be returned to your
+                        myACCA account to use towards payment for the next exam you take, or we can arrange to refund
+                        the exam fee to your payment card.</p><br>
+                    <p><strong>What happens when my exam withdrawal request is granted? #208</strong></p>
+                    <p>When your exam withdrawal request is granted, your fee will be credited to your myACCA account,
+                        and you should not attend the exam under any circumstances. If you&apos;d like to enter the next
+                        exam session, you can do so via your myACCA account. Please make sure you&apos;re aware of the
+                        booking deadline dates.</p>
+                    <p><br></p>
+                    <p><strong>What if I attend the exam after my withdrawal request is granted? #208</strong></p>
+                    <p>If you attend the exam after your withdrawal request is granted, you will be liable to pay
+                        additional fees.</p>
+                    <p><br></p>
+                    <p><strong>Can I take my exam remotely in the future if I am unwell? #208</strong></p>
+                    <p>Yes, you might be able to take your exam remotely in the future if you are unwell. Visit the ACCA
+                        Global website for more information on our remote exams.</p>
+                    <p><br></p>
+                    <p><strong>What if my condition affects my ability to sit exams moving forward? #208</strong></p>
+                    <p>If your condition may affect your ability to sit exams moving forward, please visit the website
+                        for information on requesting additional support during your examinations. Best of luck with
+                        your studies!</p><br>
+                    <p><strong>What if my exam withdrawal request has been rejected? #209</strong></p>
+                    <p>We&apos;re sorry to hear that your request has been rejected. We can only process requests for
+                        serious extenuating circumstances supported by documentary evidence.</p>
+                    <p><br></p>
+                    <p><strong>What will happen to my exam fee? #209</strong></p>
+                    <p>Unfortunately, as your request has been rejected, your exam fee cannot be refunded.</p>
+                    <p><br></p>
+                    <p><strong>What if I want to enter for this exam in the next session? #209</strong></p>
+                    <p>You can enter the exam in the next session once the exam results are released.</p>
+                    <p><br></p>
+                    <p><strong>Will my absence from the exam be recorded? #209</strong></p>
+                    <p>Yes, as you didn&apos;t attend the exam, you&apos;ll be marked as absent on your transcript and
+                        myACCA account.</p>
+                    <p><br></p>
+                    <p><strong>Where can I find more information about exam cancellation? #209</strong></p>
+                    <p>You can find more information about exam cancellation in the Frequently Asked Questions section
+                        on the ACCA Global website.</p><br>
+                    <p><strong>What should I do if I couldn&apos;t attend my exam due to exceptional reasons?
+                            #273</strong></p>
+                    <p>Use the withdrawal option on the contact us form to speak to a representative via webchat.</p>
+                    <p><br></p>
+                    <p><strong>What documents do I need to provide for consideration? #273</strong></p>
+                    <p>Relevant supporting documents such as an official medical letter or report from a doctor / GP /
+                        hospital / medical centre. These documents must detail the date(s) of illness that prevented you
+                        from attending the exam or death certificate.</p>
+                    <p>If the documents are in a language other than English, a copy of the official translation to
+                        English is required.&nbsp;</p>
+                    <p><br></p>
+                    <p><strong>When is the deadline to submit the documents for the withdrawal request? #273</strong>
+                    </p>
+                    <p>The documents must be received by XXXWITHDRAWAL DEADLINE DATE for the XXX session.</p>
+                    <p><br></p>
+                    <p><strong>What happens if my withdrawal request is granted? #273</strong></p>
+                    <p>The fees will be returned to your myACCA account to use towards payment for the next exam you
+                        take or we can arrange to refund the exam fee to your payment card.</p>
+                    <p><br></p>
+                    <p><strong>What kind of circumstances are considered for exam withdrawal? #273</strong></p>
+                    <p>Exam withdrawals will only be considered under the most extenuating circumstances and were
+                        supported by documentary evidence. Minor illnesses or workload issues, for example, can&rsquo;t
+                        be considered.</p>
+                    <p><br></p>
+                    <p><strong>Where can I find further information on exams? #273</strong></p>
+                    <p>For further information, please visit our students&apos; FAQs on the exams page.</p>
+                    <p><br></p>
+                    <p><strong>Why was my exam refund request rejected? #1406</strong></p>
+                    <p>We&apos;re sorry to inform you that we&apos;re unable to offer a refund of your exam fee.</p>
+                    <p><br></p>
+                    <p><strong>Can you explain the reason behind the rejection of my request? #1406</strong></p>
+                    <p>Your exam fee is used to secure the arrangements, resources and costs involved in the exams
+                        process, and we can only consider the most extenuating circumstances concerning absence from
+                        exams such as critical illness or bereavement. We conducted a full and thorough review of your
+                        request and the supporting documentary evidence submitted.</p>
+                    <p><br></p>
+                    <p><strong>Is there anything that I can do about this decision? #1406</strong></p>
+                    <p>We&apos;d like to assure you that we&apos;ve applied the correct procedures in reaching this
+                        decision, and we can&apos;t reconsider the request. We kindly request you to accept this
+                        decision as final.</p>
+                    <p><br></p>
+                    <p><strong>What information do I need to provide to withdraw my exam due to a bereavement?
+                            #1742</strong></p>
+                    <p>We&apos;re very sorry for your loss. To withdraw your exam due to bereavement, you will need to
+                        provide evidence of your circumstances. Please use the withdrawal option on the contact us form
+                        to speak to a representative via webchat, where we can review your case and provide further
+                        assistance.</p>
+                    <p><br></p>
+                    <p><strong>What happens if the documents I submit are not in English? #1742</strong></p>
+                    <p>If the documents are issued in a language other than English, we require a copy of the original
+                        document(s) as well as a copy of the official translation to English, signed and stamped by the
+                        translator.</p>
+                    <p><br></p>
+                    <p><strong>How soon can I expect to receive an update on my case? #1742</strong></p>
+                    <p>We understand this is a difficult time for you, and we will review your case as soon as possible.
+                        Using our Contact Us page and webchat option, we can review your case and give you an update
+                        within minutes. We hope you appreciate that we must adhere to the policy when reviewing all exam
+                        withdrawal requests.</p>
+                    <p><br></p>
+                    <p><strong>What should I do if my RI exam has been withdrawn due to issues experienced?
+                            #3460</strong></p>
+                    <p>We apologize for the inconvenience caused. Your exam entry has been withdrawn and the fee paid
+                        has been credited to your myACCA account. The booking window is open for the XXXX exam session.
+                        Please note that the deadline is XXX and closes on XX at midnight UK time.</p>
+                    <p><br></p>
+                    <p><strong>What are the important system checks for RI exams? #3460</strong></p>
+                    <p>You must pass the mandatory system test (MST) from ACCA&rsquo;s Exam Planner ahead of starting
+                        the check-in process on exam day. You&apos;ll be prompted to run the test when you book your
+                        exam(s) and before starting your exam check-in process. Please complete another MST if a
+                        software update is performed on the device you intend to use for the exam. View minimum
+                        requirements.</p>
+                    <p><br></p>
+                    <p><strong>What should I do if I face technical issues during the RI exam? #3460</strong></p>
+                    <p>The most frequent causes of technical issues with online proctored exams are testing on a work
+                        computer, an unreliable internet connection, applications running in the background, and camera
+                        or mic settings being disabled or restricted privacy settings. Please contact Pearson VUE if you
+                        have any issues with your system test. ACCA Connect cannot assist with any system test technical
+                        issues.</p>
+                    <p><br></p>
+                    <p><strong>What should I do if my documents are issued in a language other than English?
+                            #3460</strong></p>
+                    <p>Please provide a copy of the original language document(s) and a copy of the official translation
+                        to English (signed and stamped by the translator). This must be received by XXX for the XXX
+                        session. Please use the withdrawal option on the contact us form to speak to a representative
+                        via webchat to help us process your request quickly.</p>
+                    <p><br></p>
+                    <p><strong>What are my options if I experienced technical issues during my RI exam session?
+                            #3488</strong></p>
+                    <p>You can either rebook for week 2 or withdraw from the exam and receive credit for your exam fees.
+                    </p>
+                    <p><br></p>
+                    <p><strong>When can I rebook for week 2? #3488</strong></p>
+                    <p>The rebook option will be available 60 minutes after the exam was scheduled to start and 48 hours
+                        before the exam in the contingency week.</p>
+                    <p><br></p>
+                    <p><strong>What should I do if the exam is not available within the contingency week? #3488</strong>
+                    </p>
+                    <p>You may apply for an exam withdrawal if you meet the eligibility criteria.</p>
+                    <p><br></p>
+                    <p><strong>What are the eligibility criteria for exam withdrawal? #3488</strong></p>
+                    <p>You must have attempted to check in for your exam, experienced a technical issue during your exam
+                        which impacted your ability to complete it, and successfully passed the mandatory system test
+                        via Exam Planner within the set timeframe.</p>
+                    <p><br></p>
+                    <p><strong>Where can I find more information on post-exam options for remote exams? #3488</strong>
+                    </p>
+                    <p>You can visit the website for more information and watch our step-by-step video guidance for
+                        support on withdrawing your exam.</p>
+                    <p><br></p>
+                    <p><strong>When can I withdraw my RI exam if the rebook option is available during the contingency
+                            week? #3782</strong></p>
+                    <p>You can only withdraw your exam once the rebook contingency exam date has passed (subject to
+                        meeting withdrawal eligibility criteria). Check the timetable for contingency exam dates and the
+                        withdrawal option will appear on the Exam Planner after this date until XX. You need to have
+                        attempted to check in, experienced technical issues during the exam, and passed the mandatory
+                        system test within the set timeframe to be eligible for a withdrawal.</p>
+                    <p><br></p>
+                    <p><strong>Why am I unable to withdraw my RI exam if the rebook option is not available during the
+                            contingency week or the contingency date has passed? #3782</strong></p>
+                    <p>Unfortunately, you do not meet the eligibility criteria to withdraw and receive an exam credit.
+                        To be eligible, you need to have attempted to check in, experienced technical issues during the
+                        exam, and passed the mandatory system test within the set timeframe. You were notified of these
+                        criteria in our communications on the website, Insession support emails and support webinars.
+                    </p>
+                    <p><br></p>
+                    <p><strong>Why can&apos;t I withdraw from my exam? #3876</strong></p>
+                    <p>We&apos;re sorry to inform you that we cannot process your exam withdrawal request at this time.
+                        Our policy for withdrawals has returned to the standard policy where withdrawals will only be
+                        considered for serious extenuating circumstances and supported by documentary evidence.</p>
+                    <p><br></p>
+                    <p><strong>What if I don&apos;t attend the exam? #3876</strong></p>
+                    <p>If you don&apos;t attend the exam, you&apos;ll be marked as absent on your myACCA transcript.</p>
+                    <p><br></p>
+                    <p><strong>Can I enter the exam in the next session? #3876</strong></p>
+                    <p>Yes, you can enter the exam in the next session once the exam results have been released.</p>
+                    <p><br></p>
+                    <p><strong>Where can I find more information about exam cancellation? #3876</strong></p>
+                    <p>You can find more information about exam cancellation on our Frequently Asked Questions page on
+                        our website.</p>
+                    <p><br></p>
+                    <p><strong>What if I feel my performance was impacted during the exam due to my current situation?
+                            #3876</strong></p>
+                    <p>If you&apos;re able to attend the exam but feel that your performance was impacted, you can
+                        submit this information via our Mitigating Circumstances platform on myACCA for consideration
+                        during the marking process.</p>
+                    <p><br></p>
+                    <p><strong>Will I receive feedback on my exam experience? #3876</strong></p>
+                    <p>Yes, you will receive detailed personal feedback on your exam experience to help your
+                        understanding of your exam mark.</p>
+                    <p><br></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="rereg">
+            <div class="card-header" id="headingrereg" type="button" data-toggle="collapse" data-target="#collapserereg"
+                aria-expanded="false" aria-controls="collapserereg">
+                <text class="btn bg-transparent">Re-Registration (RRG)</text>
+            </div>
+            <div id="collapserereg" class="collapse" aria-labelledby="headingrereg" data-parent="#toggleList">
+                <div class="card-body">
+                    <table cellpadding="5" cellspacing="1" border="1">
+                        <tr>
+                            <td>Answer ID</td>
+                            <td>Summary</td>
+                            <td>Question</td>
+                        </tr>
+                        <tr>
+                            <td>1348</td>
+                            <td>Re-registration First Email Contact</td>
+                            <td>Re-registration First Email Contact</td>
+                        </tr>
+                        <tr>
+                            <td>1349</td>
+                            <td>Previously in a Joint Scheme</td>
+                            <td>Previously in a Joint Scheme</td>
+                        </tr>
+                        <tr>
+                            <td>1315</td>
+                            <td>Will I get my passes/exemptions back when I re-register?</td>
+                            <td>Will I get my passes/exemptions back when I re-register?</td>
+                        </tr>
+                        <tr>
+                            <td>1349</td>
+                            <td>Re-registration - Email Request Processed</td>
+                            <td>Re-registration - Email Request Processed</td>
+                        </tr>
+                        <tr>
+                            <td>1350</td>
+                            <td>Re-registration - Processed - Phone</td>
+                            <td>Re-registration - Processed - Phone</td>
+                        </tr>
+                        <tr>
+                            <td>1351</td>
+                            <td>Re-registration - Temp - Re-reg post call</td>
+                            <td>Re-registration - Temp - Re-reg post call</td>
+                        </tr>
+                        <tr>
+                            <td>1354</td>
+                            <td>Re-registration - Duplicate account ACCA/FIA</td>
+                            <td>Re-registration - Duplicate account ACCA/FIA</td>
+                        </tr>
+                        <tr>
+                            <td>1355</td>
+                            <td>Joint scheme re-reg fees</td>
+                            <td>How much is it to re-register via the Joint Scheme</td>
+                        </tr>
+                        <tr>
+                            <td>1614</td>
+                            <td>Email confirmation of re-reg</td>
+                            <td>Confirmation of Re-registration</td>
+                        </tr>
+                        <tr>
+                            <td>2014</td>
+                            <td>myACCA access after the re-reg</td>
+                            <td>Will my password for access to myACCA change when I re-register?</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <p><strong>I want to re-register as an ACCA student, what do I need to do? #1348</strong></p>
+                    <p>Great news! We&apos;re happy to have you back. To reactivate your account, you&apos;ll need
+                        to call ACCA Connect at +44(0)141 582 2000 to make a payment or reply to this message if
+                        you&apos;d like to proceed with temporary reactivation to make payments online.</p>
+                    <p><br></p>
+                    <p><strong>Why was my account suspended? #1348</strong></p>
+                    <p>Your account was suspended for (REASON).</p>
+                    <p><br></p>
+                    <p><strong>What is the outstanding balance on my account? #1348</strong></p>
+                    <p>At the time of removal, the outstanding balance on your account was XXX GBP.</p>
+                    <p><br></p>
+                    <p><strong>How much is the re-registration fee? #1348</strong></p>
+                    <p>The re-registration fee is XXX GBP.</p>
+                    <p><br></p>
+                    <p><strong>How can I make a payment? #1348</strong></p>
+                    <p>You can make a payment through bank transfer using the details provided below. Make sure to
+                        use your ACCA registration number as the payment reference and send a remittance/allocation
+                        list to ACCABankTransfer@accaglobal.com to
+                        avoid any payment issues.</p>
+                    <p><br></p>
+                    <p><strong>Can I pay online? #1348</strong></p>
+                    <p>Yes, we can reactivate your account temporarily to allow you to make payments online. Just
+                        let us know by replying to this chat.</p>
+                    <p><br></p>
+                    <p><strong>What are the exam entry closing dates? #1348</strong></p>
+                    <p>If you want to enter for an upcoming examination session, please familiarise yourself with
+                        the exam entry closing dates.</p>
+                    <p><br></p>
+                    <p><strong>I&apos;m a joint scheme student, what do I need to do? #1348</strong></p>
+                    <p>As you are resident in a country where we work in partnership with a local accountancy body
+                        as part of a Joint Education Scheme, you must re-register in accordance with the terms of
+                        the joint scheme. Find contact details of your local Joint examination scheme.</p>
+                    <p><br></p>
+                    <p><strong>Are there any updates to the terms and conditions since I joined? #1348</strong></p>
+                    <p>Since you joined, there may have been some updates to our terms and conditions. We ask that
+                        you review our online declaration that sets these out and which you agree to comply with as
+                        a student. In particular, if you&rsquo;ve not already done so, please promptly notify us in
+                        writing if you&rsquo;ve been, or subsequently become, subject to any matters which may
+                        engage Bye-law 8.</p>
+                    <p><br></p>
+                    <p><strong>Do I need to re-register as a joint scheme student if I was previously registered as
+                            part of a joint scheme? #1349</strong></p>
+                    <p>Yes, if you&apos;re resident in a country where ACCA operates as part of a Joint Examination
+                        Scheme, you must re-register in accordance with the terms of the joint scheme. You can find
+                        out how to re-register with your joint scheme and download the re-registration form on our
+                        website. You can also view the contact details for our Joint Examination Partnerships there.
+                    </p>
+                    <p><br></p>
+                    <p><strong>What should I do if I was removed for non-payment of JES fees or ACCA fees?
+                            #1349</strong></p>
+                    <p>If you were removed for non-payment of JES fees or ACCA fees, you may need to pay your
+                        outstanding fees with the JES. The JES will then email ACCA to confirm your re-registration
+                        and you will be able to call Connect and re-register over the phone.</p>
+                    <p><br></p>
+                    <p><strong>Will I get back my passes/exemptions when I re-register? #1315</strong></p>
+                    <p>Yes, you will retain your previous results, except for Professional level exams that may be
+                        expired due to the 7-year rule.</p>
+                    <p><br></p>
+                    <p><strong>What if I can&apos;t find my registration number? #1315</strong></p>
+                    <p>Try searching for the account using the client&apos;s name or email address. If you still
+                        can&apos;t find it, contact Student Support for help.</p>
+                    <p><br></p>
+                    <p><strong>What happens to my results if I completed the old syllabus? #1315</strong></p>
+                    <p>If you&apos;re no longer on file, you may not receive credit for all papers due to syllabus
+                        changes and time requirements. Contact Student Support to retrieve your records and confirm
+                        if any results can be converted to the current syllabus.</p>
+                    <p><br></p>
+                    <p><strong>Will my previously assessed qualifications be re-assessed upon re-registration?
+                            #1315</strong></p>
+                    <p>No, previously assessed qualifications will not be re-assessed upon re-registration.</p>
+                    <p><br></p>
+                    <p><strong>What is the status of my temporary re-activation request? #1349</strong></p>
+                    <p>Your myACCA account has been reopened, and we request you log in and pay the fees within 10
+                        days.</p>
+                    <p><br></p>
+                    <p><strong>What should I do if I forget my myACCA password? #1349</strong></p>
+                    <p>If you forget your password, you can click on &quot;Forgotten your password&quot; on the
+                        myACCA login page, enter your username, and follow the steps to reset your password.</p>
+                    <p><br></p>
+                    <p><strong>What are the password requirements for myACCA? #1349</strong></p>
+                    <p>Your new password must be at least eight characters long and contain one lowercase alphabetic
+                        character, one special character (e.g., ? !/ # ~@), one uppercase alphabetic character, and
+                        one numeric character.</p>
+                    <p><br></p>
+                    <p><strong>What will happen if I don&apos;t pay the fees within 10 days? #1349</strong></p>
+                    <p>If payment is not made within 10 days, your account will be re-suspended. This will not incur
+                        any further penalties, but you will still owe the same amount if you try to re-register
+                        within the same calendar year.</p>
+                    <p><br></p>
+                    <p><strong>I received an email about a duplicate account. What should I do? #1354</strong></p>
+                    <p>You have another student account with us that is currently suspended. To continue your
+                        studies, you need to pay the outstanding balance and re-registration fee. Since you&apos;ve
+                        already paid part of it, you only need to pay the remaining amount. Please confirm if you
+                        wish to proceed, and we&apos;ll arrange for your account to be re-registered.</p>
+                    <p><br></p>
+                    <p><strong>How much do I need to pay to re-register my account? #1354</strong></p>
+                    <p>You need to pay the outstanding balance and re-registration fee. If you&apos;ve already paid
+                        part of it, you only need to pay the remaining amount. The exact amount depends on your
+                        account status, which we can check if you provide your registration number. Please note that
+                        you have 10 working days to make payment upon re-registration.</p>
+                    <p><br></p>
+                    <p><strong>Can I make payment online after re-registration? #1354</strong></p>
+                    <p>Yes, once your account is re-registered, you&apos;ll be able to access your myACCA account
+                        again and make payments online. We&apos;ll apply the outstanding fees to your account, and
+                        you&apos;ll have 10 working days to make payment. If you fail to make payment, your account
+                        will be resuspended.</p>
+                    <p><br></p>
+                    <p><strong>What is the cost to re-register via the Joint Scheme? #1355</strong></p>
+                    <p>No payments made to Joint Schemes are reflected in myACCA. Please contact your local Joint
+                        Scheme for confirmation of any fees due to them.</p>
+                    <p><br></p>
+                    <p><strong>What should I do if I owe fees to my Joint Scheme? #1355</strong></p>
+                    <p>Please arrange payment to your Joint Scheme. Once payment is made, they will send us an email
+                        confirming your account is up to date with them. You&apos;ll receive a reference number for
+                        this email, at which point you can call ACCA Connect at +44 141 582 2000 and quote this
+                        number. After some checks, we&rsquo;ll then be able to proceed with your re-registration
+                        request.</p>
+                    <p><br></p>
+                    <p><strong>What fees do I need to pay to ACCA for re-registration? #1355</strong></p>
+                    <p>You&apos;ll need to pay a re-registration fee (same as the initial registration fee) to us,
+                        together with any fees that were outstanding when you left the register.</p>
+                    <p><br></p>
+                    <p><strong>What is my username and password for myACCA? #1614</strong></p>
+                    <p>Your username is your registration number and your password remains the same as before.</p>
+                    <p><br></p>
+                    <p><strong>What should I do if I forgot my myACCA password? #1614</strong></p>
+                    <p>Answer: Go to the forgotten password section on myACCA, answer the personal information
+                        questions, and a new password will be emailed to you within two hours.</p>
+                    <p><br></p>
+                    <p><strong>Can I book for any of the upcoming exam sessions? #1614</strong></p>
+                    <p>Yes, you can now book your exams again through the exam planner on your myACCA account.</p>
+                    <p><br></p>
+                    <p><strong>Where can I find the exam entry deadlines and fees and charges? #1614</strong></p>
+                    <p>You can view the exam entry deadlines and fees and charges on the ACCA website under the exam
+                        planner and price list sections.</p>
+                    <p><br></p>
+                    <p><strong>What resources are available to help me prepare for my exams? #1614</strong></p>
+                    <p>There is a wide range of resources available to help you prepare for your exams, such as
+                        accessing the syllabus and study guide, gaining insights from the Examining Team, or
+                        broadening your understanding of exam topics. Please see our exam resources for more
+                        information.</p>
+                    <p><br></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="grace">
+            <div class="card-header" id="headinggrace" type="button" data-toggle="collapse" data-target="#collapsegrace"
+                aria-expanded="false" aria-controls="collapsegrace">
+                <text class="btn bg-transparent">Grace Period (Grace)</text>
+            </div>
+            <div id="collapsegrace" class="collapse" aria-labelledby="headinggrace" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="detailschange">
+            <div class="card-header" id="headingdetailschange" type="button" data-toggle="collapse"
+                data-target="#collapsedetailschange" aria-expanded="false" aria-controls="collapsed">
+                <text class="btn bg-transparent">Change of Details (COD)</text>
+            </div>
+            <div id="collapsedetailschange" class="collapse" aria-labelledby="headingdetailschange"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="certificates">
+            <div class="card-header" id="headingcertificates" type="button" data-toggle="collapse"
+                data-target="#collapsecertificates" aria-expanded="false" aria-controls="collapsecertificates">
+                <text class="btn bg-transparent">Certificates (CRT)</text>
+            </div>
+            <div id="collapsecertificates" class="collapse" aria-labelledby="headingcertificates"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="transcripts">
+            <div class="card-header" id="headingtranscripts" type="button" data-toggle="collapse"
+                data-target="#collapsetranscripts" aria-expanded="false" aria-controls="collapsetranscripts">
+                <text class="btn bg-transparent">Tramscripts (TRX)</text>
+            </div>
+            <div id="collapsetranscripts" class="collapse" aria-labelledby="headingtranscripts"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="technicalissues">
+            <div class="card-header" id="headingtechnicalissues" type="button" data-toggle="collapse"
+                data-target="#collapsetechnicalissues" aria-expanded="false" aria-controls="collapsetechnicalissues">
+                <text class="btn bg-transparent">System Issues (SYI)</text>
+            </div>
+            <div id="collapsetechnicalissues" class="collapse" aria-labelledby="headingtechnicalissues"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="ethics">
+            <div class="card-header" id="headingethics" type="button" data-toggle="collapse"
+                data-target="#collapseethics" aria-expanded="false" aria-controls="collapseethics">
+                <text class="btn bg-transparent">Ethics (ETH)</text>
+            </div>
+            <div id="collapseethics" class="collapse" aria-labelledby="headingethics" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="7year">
+            <div class="card-header" id="heading7year" type="button" data-toggle="collapse" data-target="#collapse7year"
+                aria-expanded="false" aria-controls="collapse7year">
+                <text class="btn bg-transparent">7-year rule (PAC)</text>
+            </div>
+            <div id="collapse7year" class="collapse" aria-labelledby="heading7year" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="additionalsupport">
+            <div class="card-header" id="headingadditionalsupport" type="button" data-toggle="collapse"
+                data-target="#collapseadditionalsupport" aria-expanded="false"
+                aria-controls="collapseadditionalsupport">
+                <text class="btn bg-transparent">Additional Support (ASU)</text>
+            </div>
+            <div id="collapseadditionalsupport" class="collapse" aria-labelledby="headingadditionalsupport"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="adminreview">
+            <div class="card-header" id="headingadminreview" type="button" data-toggle="collapse"
+                data-target="#collapseadminreview" aria-expanded="false" aria-controls="collapseadminreview">
+                <text class="btn bg-transparent">Admin Review (ADR)</text>
+            </div>
+            <div id="collapseadminreview" class="collapse" aria-labelledby="headingadminreview"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="mitigatingandcentre">
+            <div class="card-header" id="headingmitigatingandcentre" type="button" data-toggle="collapse"
+                data-target="#collapsemitigatingandcentre" aria-expanded="false"
+                aria-controls="collapsemitigatingandcentre">
+                <text class="btn bg-transparent">Mitigating and Centre Complaints (MTG)</text>
+            </div>
+            <div id="collapsemitigatingandcentre" class="collapse" aria-labelledby="headingmitigatingandcentre"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="password">
+            <div class="card-header" id="headingpassword" type="button" data-toggle="collapse"
+                data-target="#collapsepassword" aria-expanded="false" aria-controls="collapsepassword">
+                <text class="btn bg-transparent">Password General (PWRD)</text>
+            </div>
+            <div id="collapsepassword" class="collapse" aria-labelledby="headingpassword" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="equivalency">
+            <div class="card-header" id="headingequivalency" type="button" data-toggle="collapse"
+                data-target="#collapseequivalency" aria-expanded="false" aria-controls="collapseequivalency">
+                <text class="btn bg-transparent">Equivalency (EQV)</text>
+            </div>
+            <div id="collapseequivalency" class="collapse" aria-labelledby="headingequivalency"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="cbe">
+            <div class="card-header" id="headingcbe" type="button" data-toggle="collapse" data-target="#collapsecbe"
+                aria-expanded="false" aria-controls="collapsecbe">
+                <text class="btn bg-transparent">Computer Based Exam (ECBE)</text>
+            </div>
+            <div id="collapsecbe" class="collapse" aria-labelledby="headingcbe" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="docket">
+            <div class="card-header" id="headingdocket" type="button" data-toggle="collapse"
+                data-target="#collapsedocket" aria-expanded="false" aria-controls="collapsedocket">
+                <text class="btn bg-transparent">Dockets (DCK)</text>
+            </div>
+            <div id="collapsedocket" class="collapse" aria-labelledby="headingdocket" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="centre">
+            <div class="card-header" id="headingcentre" type="button" data-toggle="collapse"
+                data-target="#collapsecentre" aria-expanded="false" aria-controls="collapsecentre">
+                <text class="btn bg-transparent">Centres (CTR)</text>
+            </div>
+            <div id="collapsecentre" class="collapse" aria-labelledby="headingcentre" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="examentry">
+            <div class="card-header" id="headingexamentry" type="button" data-toggle="collapse"
+                data-target="#collapseexamentry" aria-expanded="false" aria-controls="collapseexamentry">
+                <text class="btn bg-transparent">Exam Entry (EXEN)</text>
+            </div>
+            <div id="collapseexamentry" class="collapse" aria-labelledby="headingexamentry" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="marker">
+            <div class="card-header" id="headingmarker" type="button" data-toggle="collapse"
+                data-target="#collapsemarker" aria-expanded="false" aria-controls="collapsemarker">
+                <text class="btn bg-transparent">Marker (MRK)</text>
+            </div>
+            <div id="collapsemarker" class="collapse" aria-labelledby="headingmarker" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="prizewinner">
+            <div class="card-header" id="headingprizewinner" type="button" data-toggle="collapse"
+                data-target="#collapseprizewinner" aria-expanded="false" aria-controls="collapseprizewinner">
+                <text class="btn bg-transparent">Prize Winners (PZW)</text>
+            </div>
+            <div id="collapseprizewinner" class="collapse" aria-labelledby="headingprizewinner"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="remoteinvigilation">
+            <div class="card-header" id="headingremoteinvigilation" type="button" data-toggle="collapse"
+                data-target="#collapseremoteinvigilation" aria-expanded="false"
+                aria-controls="collapseremoteinvigilation">
+                <text class="btn bg-transparent">Remote Invigilation (RIN)</text>
+            </div>
+            <div id="collapseremoteinvigilation" class="collapse" aria-labelledby="headingremoteinvigilation"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="results">
+            <div class="card-header" id="headingresults" type="button" data-toggle="collapse"
+                data-target="#collapseresults" aria-expanded="false" aria-controls="collapseresults">
+                <text class="btn bg-transparent">Results (XRST)</text>
+            </div>
+            <div id="collapseresults" class="collapse" aria-labelledby="headingresults" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="resources">
+            <div class="card-header" id="headingresources" type="button" data-toggle="collapse"
+                data-target="#collapseresources" aria-expanded="false" aria-controls="collapseresources">
+                <text class="btn bg-transparent">Resources (EXR)</text>
+            </div>
+            <div id="collapseresources" class="collapse" aria-labelledby="headingresources" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="timetable">
+            <div class="card-header" id="headingtimetable" type="button" data-toggle="collapse"
+                data-target="#collapsetimetable" aria-expanded="false" aria-controls="collapsetimetable">
+                <text class="btn bg-transparent">Time Table (TTB)</text>
+            </div>
+            <div id="collapsetimetable" class="collapse" aria-labelledby="headingtimetable" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="conditionalexemptions">
+            <div class="card-header" id="headingconditionalexemptions" type="button" data-toggle="collapse"
+                data-target="#collapseconditionalexemptions" aria-expanded="false"
+                aria-controls="collapseconditionalexemptions">
+                <text class="btn bg-transparent">Conditional Exemptions (EXC)</text>
+            </div>
+            <div id="collapseconditionalexemptions" class="collapse" aria-labelledby="headingconditionalexemptions"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="exemptionseligibility">
+            <div class="card-header" id="headingexemptionseligibility" type="button" data-toggle="collapse"
+                data-target="#collapseexemptionseligibility" aria-expanded="false"
+                aria-controls="collapseexemptionseligibility">
+                <text class="btn bg-transparent">Exemptions Eligibility (EXEL)</text>
+            </div>
+            <div id="collapseexemptionseligibility" class="collapse" aria-labelledby="headingexemptionseligibility"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="exemptionsforfeit">
+            <div class="card-header" id="headingexemptionsforfeit" type="button" data-toggle="collapse"
+                data-target="#collapseexemptionsforfeit" aria-expanded="false"
+                aria-controls="collapseexemptionsforfeit">
+                <text class="btn bg-transparent">Exemptions Forfeit (EXF)</text>
+            </div>
+            <div id="collapseexemptionsforfeit" class="collapse" aria-labelledby="headingexemptionsforfeit"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="exemptionspayment">
+            <div class="card-header" id="headingexemptionspayment" type="button" data-toggle="collapse"
+                data-target="#collapseexemptionspayment" aria-expanded="false"
+                aria-controls="collapseexemptionspayment">
+                <text class="btn bg-transparent">Exemptions Payment (EXP)</text>
+            </div>
+            <div id="collapseexemptionspayment" class="collapse" aria-labelledby="headingexemptionspayment"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="links">
+            <div class="card-header" id="headingsingletemplate" type="button" data-toggle="collapse"
+                data-target="#collapselinks" aria-expanded="false" aria-controls="collapselinks">
+                <text class="btn bg-transparent">Links</text>
+            </div>
+            <div id="collapselinks" class="collapse" aria-labelledby="headinglinks" data-parent="#toggleList">
+                <div class="card-body">
+                    <p><a href="https://login.ciam.accaglobal.com/" target="_blank" rel="noopener noreferrer">myACCA</a>
+                    </p>
+                    <p>https://login.ciam.accaglobal.com/</p>
+                    <p><br></p>
+                    <p><a href="https://www.accaglobal.com/uk/en/student/getting-started/important-dates.html"
+                            target="_blank" rel="noopener noreferrer">Important Dates</a></p>
+                    <p>https://www.accaglobal.com/uk/en/student/getting-started/important-dates.html</p>
+                    <p><br></p>
+                    <p><a href="https://forms.accaglobal.com/contact-us" target="_blank"
+                            rel="noopener noreferrer">Contant Us</a></p>
+                    <p>https://forms.accaglobal.com/contact-us</p>
+                    <p><br></p>
+                    <p><a href="https://www.accaglobal.com/" target="_blank" rel="noopener noreferrer">ACCA
+                            Global</a></p>
+                    <p>https://www.accaglobal.com/</p>
+                    <p><br></p>
+                    <p><a href="https://www.accaglobal.com/ie/en/student/exam-entry-and-administration/about-our-exams/remote-exams.html"
+                            target="_blank" rel="noopener noreferrer">Remote Exams Information</a></p>
+                    <p>https://www.accaglobal.com/ie/en/student/exam-entry-and-administration/about-our-exams/remote-exams.html
+                    </p>
+                    <p><br></p>
+                    <p><a href="https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/enter-an-exam/additional-support.html"
+                            target="_blank" rel="noopener noreferrer">Additional Support</a></p>
+                    <p>https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/enter-an-exam/additional-support.html
+                    </p>
+                    <p><br></p>
+                    <p><a href="https://www.accaglobal.com/gb/en/help/exam-sessions.html" target="_blank"
+                            rel="noopener noreferrer">Student&apos;s FAQs on Exams</a></p>
+                    <p>https://www.accaglobal.com/gb/en/help/exam-sessions.html</p>
+                    <p><br></p>
+                    <p><a href="https://home.pearsonvue.com/acca/onvue" target="_blank"
+                            rel="noopener noreferrer">Pearson VUE Website</a></p>
+                    <p>https://home.pearsonvue.com/acca/onvue</p>
+                    <p><br></p>
+                    <p><a href="https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/computer-based-exams/remote-session-exams/before-you-book.html"
+                            target="_blank" rel="noopener noreferrer">Minimum System Requirements</a></p>
+                    <p>https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/computer-based-exams/remote-session-exams/before-you-book.html
+                    </p>
+                    <p><br></p>
+                    <p><a href="https://www.accaglobal.com/gb/en/qualifications/accountancy-career/fees/fees-charges.html"
+                            target="_blank" rel="noopener noreferrer">Fees and Charges</a></p>
+                    <p>https://www.accaglobal.com/gb/en/qualifications/accountancy-career/fees/fees-charges.html</p>
+                    <p><br></p>
+                    <p><a href="https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/exam-timetables/remote-session-cbe-timetable.html"
+                            target="_blank" rel="noopener noreferrer">Remote Session CBE Timetable</a></p>
+                    <p>https://www.accaglobal.com/gb/en/student/exam-entry-and-administration/exam-timetables/remote-session-cbe-timetable.html
+                    </p>
+                    <p><br></p>
+                    <p><a href="https://www.accaglobal.com/an/en/student/exam-entry-and-administration/about-our-exams/remote-exams/remote-session-exams/post-exam-options.html"
+                            target="_blank" rel="noopener noreferrer">Post Exam Options for Remote Exams</a></p>
+                    <p>https://www.accaglobal.com/an/en/student/exam-entry-and-administration/about-our-exams/remote-exams/remote-session-exams/post-exam-options.html
+                    </p>
+                    <p><br></p>
+                    <p><a href="https://www.accaglobal.com/vn/en/student/exam-entry-and-administration/exam-results/exam-performance/tips-and-advice.html"
+                            target="_blank" rel="noopener noreferrer">My Exam Performance Guidance</a></p>
+                    <p>https://www.accaglobal.com/vn/en/student/exam-entry-and-administration/exam-results/exam-performance/tips-and-advice.html
+                    </p>
+                    <p><br></p>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="music">
+            <div class="card-header" id="headingmusic" type="button" data-toggle="collapse" data-target="#collapsemusic"
+                aria-expanded="false" aria-controls="collapsemusic">
+                <text class="btn bg-transparent">Music</text>
+            </div>
+            <div id="collapsemusic" class="collapse" aria-labelledby="headingmusic" data-parent="#toggleList">
+                <div class="card-body">
+                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/jfKfPfyJRdk"
+                        title="lofi hip hop radio 📚 - beats to relax/study to" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+
 </body>
 <script>
     $(document).ready(function () {
@@ -834,6 +1198,19 @@
 </script>
 
 </html>
+<!--  -->
+<!-- <div class="card" id="{d}">
+    <div class="card-header" id="heading{d}" type="button" data-toggle="collapse" data-target="#collapse{d}"
+        aria-expanded="false" aria-controls="collapse{d}">
+        <text class="btn bg-transparent">d</text>
+    </div>
+    <div id="collapse{d}" class="collapse" aria-labelledby="heading{d}" data-parent="#toggleList">
+        <div class="card-body">
+
+        </div>
+    </div>
+</div> -->
+<!--  -->
 <!-- <div class="card" Class="Withdrawal">
 				<div class="card-header" id="heading2">
 					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Withdrawal</button>
