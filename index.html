@@ -176,10 +176,26 @@
             border: none;
         }
 
+        .prompt {
+            display: block;
+            width: 100%;
+            height: 50px;
+            border-radius: 25px;
+            border-color: gray;
+            background-color: white;
+            color: #333;
+            font-size: 1.2em;
+            text-align: center;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+
         @media screen and (max-width: 768px) {
             .iframe-container {
                 width: 100%;
             }
+
         }
     </style>
     <!-- Optional JavaScript -->
@@ -213,6 +229,8 @@
                 <div id="collapseessentials" class="collapse" aria-labelledby="headingessentials"
                     data-parent="#toggleList">
                     <div class="card-body">
+                        <button class="prompt"
+                            onclick="copyToClipboard('Write an email response to an ACCA student who has sent this: QUERY. I need to inform him this: INFO. First line should start with Thanks for contacting us and personalised according to customer\'s query to make a full first line. Second line should include empathy or happiness (whichever applicable). Last line of the email body should only be If you need any further help, please contact us again. Language, Grammar & Punctuation should be according to UK English. so use words like apologise instead of apologize. This email should meet quality and increase our Customer Satisfaction.')">Coaching</button>
                         <div class="iframe-container-email">
                             <iframe src="https://indify.co/widgets/live/counter/9399UQ3U2YfvJRy2qUgq"></iframe>
                         </div>
@@ -1083,7 +1101,638 @@
                 </div>
             </div>
         </div>
+        <div class="card" id="banktransfer">
+            <div class="card-header" id="headingbanktransfer" type="button" data-toggle="collapse"
+                data-target="#collapsebanktransfer" aria-expanded="false" aria-controls="collapsebanktransfer">
+                <text class="btn bg-transparent">Bank Transfer (BTR)</text>
+            </div>
+            <div id="collapsebanktransfer" class="collapse" aria-labelledby="headingbanktransfer"
+                data-parent="#toggleList">
+                <div class="card-body">
 
+                </div>
+            </div>
+        </div>
+        <div class="card" id="duplicatecardpayment">
+            <div class="card-header" id="headingduplicatecardpayment" type="button" data-toggle="collapse"
+                data-target="#collapseduplicatecardpayment" aria-expanded="false"
+                aria-controls="collapseduplicatecardpayment">
+                <text class="btn bg-transparent">Duplicate Card Payment (DUP)</text>
+            </div>
+            <div id="collapseduplicatecardpayment" class="collapse" aria-labelledby="headingduplicatecardpayment"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="feesnotpaid">
+            <div class="card-header" id="headingfeesnotpaid" type="button" data-toggle="collapse"
+                data-target="#collapsefeesnotpaid" aria-expanded="false" aria-controls="collapsefeesnotpaid">
+                <text class="btn bg-transparent">Fees Not Paid (FNP)</text>
+            </div>
+            <div id="collapsefeesnotpaid" class="collapse" aria-labelledby="headingfeesnotpaid"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="howtopay">
+            <div class="card-header" id="headinghowtopay" type="button" data-toggle="collapse"
+                data-target="#collapsehowtopay" aria-expanded="false" aria-controls="collapsehowtopay">
+                <text class="btn bg-transparent">How to Pay (HTP)</text>
+            </div>
+            <div id="collapsehowtopay" class="collapse" aria-labelledby="headinghowtopay" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="paymentnotreceived">
+            <div class="card-header" id="headingpaymentnotreceived" type="button" data-toggle="collapse"
+                data-target="#collapsepaymentnotreceived" aria-expanded="false"
+                aria-controls="collapsepaymentnotreceived">
+                <text class="btn bg-transparent">Payment Not Received (PNR)</text>
+            </div>
+            <div id="collapsepaymentnotreceived" class="collapse" aria-labelledby="headingpaymentnotreceived"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="paymentother">
+            <div class="card-header" id="headingpaymentother" type="button" data-toggle="collapse"
+                data-target="#collapsepaymentother" aria-expanded="false" aria-controls="collapsepaymentother">
+                <text class="btn bg-transparent">Payments Other (PYM)</text>
+            </div>
+            <div id="collapsepaymentother" class="collapse" aria-labelledby="headingpaymentother"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="paymentreceived">
+            <div class="card-header" id="headingpaymentreceived" type="button" data-toggle="collapse"
+                data-target="#collapsepaymentreceived" aria-expanded="false" aria-controls="collapsepaymentreceived">
+                <text class="btn bg-transparent">Payment Received (PYR)</text>
+            </div>
+            <div id="collapsepaymentreceived" class="collapse" aria-labelledby="headingpaymentreceived"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="receiptsorinvoices">
+            <div class="card-header" id="headingreceiptsorinvoices" type="button" data-toggle="collapse"
+                data-target="#collapsereceiptsorinvoices" aria-expanded="false"
+                aria-controls="collapsereceiptsorinvoices">
+                <text class="btn bg-transparent">Receipts/Invoices (R/I)</text>
+            </div>
+            <div id="collapsereceiptsorinvoices" class="collapse" aria-labelledby="headingreceiptsorinvoices"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="refunds">
+            <div class="card-header" id="headingrefunds" type="button" data-toggle="collapse"
+                data-target="#collapserefunds" aria-expanded="false" aria-controls="collapserefunds">
+                <text class="btn bg-transparent">Refunds (RFD) </text>
+            </div>
+            <div id="collapserefunds" class="collapse" aria-labelledby="headingrefunds" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="financeadditional">
+            <div class="card-header" id="headingfinanceadditional" type="button" data-toggle="collapse"
+                data-target="#collapsefinanceadditional" aria-expanded="false"
+                aria-controls="collapsefinanceadditional">
+                <text class="btn bg-transparent">Additional Finance (CC)</text>
+            </div>
+            <div id="collapsefinanceadditional" class="collapse" aria-labelledby="headingfinanceadditional"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="career">
+            <div class="card-header" id="headingcareer" type="button" data-toggle="collapse"
+                data-target="#collapsecareer" aria-expanded="false" aria-controls="collapsecareer">
+                <text class="btn bg-transparent">ACCA Careers (JB)</text>
+            </div>
+            <div id="collapsecareer" class="collapse" aria-labelledby="headingcareer" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="authorisations">
+            <div class="card-header" id="headingauthorisations" type="button" data-toggle="collapse"
+                data-target="#collapseauthorisations" aria-expanded="false" aria-controls="collapseauthorisations">
+                <text class="btn bg-transparent">Authorisations (ATH)</text>
+            </div>
+            <div id="collapseauthorisations" class="collapse" aria-labelledby="headingauthorisations"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="cpddeaclaration">
+            <div class="card-header" id="headingcpddeaclaration" type="button" data-toggle="collapse"
+                data-target="#collapsecpddeaclaration" aria-expanded="false" aria-controls="collapsecpddeaclaration">
+                <text class="btn bg-transparent">CPD Declarations/Waivers/Reviews (CPDD)</text>
+            </div>
+            <div id="collapsecpddeaclaration" class="collapse" aria-labelledby="headingcpddeaclaration"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="cpdsupport">
+            <div class="card-header" id="headingcpdsupport" type="button" data-toggle="collapse"
+                data-target="#collapsecpdsupport" aria-expanded="false" aria-controls="collapsecpdsupport">
+                <text class="btn bg-transparent">CPD Support (CPDSUP)</text>
+            </div>
+            <div id="collapsecpdsupport" class="collapse" aria-labelledby="headingcpdsupport" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="membersdirectory">
+            <div class="card-header" id="headingmembersdirectory" type="button" data-toggle="collapse"
+                data-target="#collapsemembersdirectory" aria-expanded="false" aria-controls="collapsemembersdirectory">
+                <text class="btn bg-transparent">Directory of Members (DOM)</text>
+            </div>
+            <div id="collapsemembersdirectory" class="collapse" aria-labelledby="headingmembersdirectory"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="fellowship">
+            <div class="card-header" id="headingfellowship" type="button" data-toggle="collapse"
+                data-target="#collapsefellowship" aria-expanded="false" aria-controls="collapsefellowship">
+                <text class="btn bg-transparent">Fellowship (FLW)</text>
+            </div>
+            <div id="collapsefellowship" class="collapse" aria-labelledby="headingfellowship" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="memberspayment">
+            <div class="card-header" id="headingmemberspayment" type="button" data-toggle="collapse"
+                data-target="#collapsememberspayment" aria-expanded="false" aria-controls="collapsememberspayment">
+                <text class="btn bg-transparent">Payment (MPY)</text>
+            </div>
+            <div id="collapsememberspayment" class="collapse" aria-labelledby="headingmemberspayment"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="reinstatement">
+            <div class="card-header" id="headingreinstatement" type="button" data-toggle="collapse"
+                data-target="#collapsereinstatement" aria-expanded="false" aria-controls="collapsereinstatement">
+                <text class="btn bg-transparent">Re-instatement (RST)</text>
+            </div>
+            <div id="collapsereinstatement" class="collapse" aria-labelledby="headingreinstatement"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="retire">
+            <div class="card-header" id="headingretire" type="button" data-toggle="collapse"
+                data-target="#collapseretire" aria-expanded="false" aria-controls="collapseretire">
+                <text class="btn bg-transparent">Retire (RTR)</text>
+            </div>
+            <div id="collapseretire" class="collapse" aria-labelledby="headingretire" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="membersgeneral">
+            <div class="card-header" id="headingmembersgeneral" type="button" data-toggle="collapse"
+                data-target="#collapsemembersgeneral" aria-expanded="false" aria-controls="collapsemembersgeneral">
+                <text class="btn bg-transparent">Members General (MGN) </text>
+            </div>
+            <div id="collapsemembersgeneral" class="collapse" aria-labelledby="headingmembersgeneral"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="memberadditionalsearch">
+            <div class="card-header" id="headingmemberadditionalsearch" type="button" data-toggle="collapse"
+                data-target="#collapsememberadditionalsearch" aria-expanded="false"
+                aria-controls="collapsememberadditionalsearch">
+                <text class="btn bg-transparent">Additional Searches (MRA & CAANZ)</text>
+            </div>
+            <div id="collapsememberadditionalsearch" class="collapse" aria-labelledby="headingmemberadditionalsearch"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="otherqualifications">
+            <div class="card-header" id="headingotherqualifications" type="button" data-toggle="collapse"
+                data-target="#collapseotherqualifications" aria-expanded="false"
+                aria-controls="collapseotherqualifications">
+                <text class="btn bg-transparent">Other Qualifications (OQL) </text>
+            </div>
+            <div id="collapseotherqualifications" class="collapse" aria-labelledby="headingotherqualifications"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="oxfordbrookes">
+            <div class="card-header" id="headingoxfordbrookes" type="button" data-toggle="collapse"
+                data-target="#collapseoxfordbrookes" aria-expanded="false" aria-controls="collapseoxfordbrookes">
+                <text class="btn bg-transparent">Oxford Brookes (OXB)</text>
+            </div>
+            <div id="collapseoxfordbrookes" class="collapse" aria-labelledby="headingoxfordbrookes"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="rap">
+            <div class="card-header" id="headingrap" type="button" data-toggle="collapse" data-target="#collapserap"
+                aria-expanded="false" aria-controls="collapserap">
+                <text class="btn bg-transparent">Research and Analysis Project (RAP)</text>
+            </div>
+            <div id="collapserap" class="collapse" aria-labelledby="headingrap" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="approvedemployer">
+            <div class="card-header" id="headingapprovedemployer" type="button" data-toggle="collapse"
+                data-target="#collapseapprovedemployer" aria-expanded="false" aria-controls="collapseapprovedemployer">
+                <text class="btn bg-transparent">pproved Employer (AEM)</text>
+            </div>
+            <div id="collapseapprovedemployer" class="collapse" aria-labelledby="headingapprovedemployer"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="experiencerecords">
+            <div class="card-header" id="headingexperiencerecords" type="button" data-toggle="collapse"
+                data-target="#collapseexperiencerecords" aria-expanded="false"
+                aria-controls="collapseexperiencerecords">
+                <text class="btn bg-transparent">Experience Records (XPE) </text>
+            </div>
+            <div id="collapseexperiencerecords" class="collapse" aria-labelledby="headingexperiencerecords"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="performanceobjectives">
+            <div class="card-header" id="headingperformanceobjectives" type="button" data-toggle="collapse"
+                data-target="#collapseperformanceobjectives" aria-expanded="false"
+                aria-controls="collapseperformanceobjectives">
+                <text class="btn bg-transparent">Performance Objectives (POB)</text>
+            </div>
+            <div id="collapseperformanceobjectives" class="collapse" aria-labelledby="headingperformanceobjectives"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="supervisor">
+            <div class="card-header" id="headingsupervisor" type="button" data-toggle="collapse"
+                data-target="#collapsesupervisor" aria-expanded="false" aria-controls="collapsesupervisor">
+                <text class="btn bg-transparent">Supervisor (SPV)</text>
+            </div>
+            <div id="collapsesupervisor" class="collapse" aria-labelledby="headingsupervisor" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="cat">
+            <div class="card-header" id="headingcat" type="button" data-toggle="collapse" data-target="#collapsecat"
+                aria-expanded="false" aria-controls="collapsecat">
+                <text class="btn bg-transparent">CAT (CAT1)</text>
+            </div>
+            <div id="collapsecat" class="collapse" aria-labelledby="headingcat" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="joininginfo">
+            <div class="card-header" id="headingjoininginfo" type="button" data-toggle="collapse"
+                data-target="#collapsejoininginfo" aria-expanded="false" aria-controls="collapsejoininginfo">
+                <text class="btn bg-transparent">Joining Information (J/I)</text>
+            </div>
+            <div id="collapsejoininginfo" class="collapse" aria-labelledby="headingjoininginfo"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="registrationjointscheme">
+            <div class="card-header" id="headingregistrationjointscheme" type="button" data-toggle="collapse"
+                data-target="#collapseregistrationjointscheme" aria-expanded="false"
+                aria-controls="collapseregistrationjointscheme">
+                <text class="btn bg-transparent">Joint Scheme (RJS)</text>
+            </div>
+            <div id="collapseregistrationjointscheme" class="collapse" aria-labelledby="headingregistrationjointscheme"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="simpson">
+            <div class="card-header" id="headingsimpson" type="button" data-toggle="collapse"
+                data-target="#collapsesimpson" aria-expanded="false" aria-controls="collapsesimpson">
+                <text class="btn bg-transparent">Simpson Scholarship (SMP)</text>
+            </div>
+            <div id="collapsesimpson" class="collapse" aria-labelledby="headingsimpson" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="registrationstatusoreligibility">
+            <div class="card-header" id="headingregistrationstatusoreligibility" type="button" data-toggle="collapse"
+                data-target="#collapseregistrationstatusoreligibility" aria-expanded="false"
+                aria-controls="collapseregistrationstatusoreligibility">
+                <text class="btn bg-transparent">Status/Eligibility (RSE)</text>
+            </div>
+            <div id="collapseregistrationstatusoreligibility" class="collapse"
+                aria-labelledby="headingregistrationstatusoreligibility" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="trailblazer">
+            <div class="card-header" id="headingtrailblazer" type="button" data-toggle="collapse"
+                data-target="#collapsetrailblazer" aria-expanded="false" aria-controls="collapsetrailblazer">
+                <text class="btn bg-transparent">Trailblazer (TRB)</text>
+            </div>
+            <div id="collapsetrailblazer" class="collapse" aria-labelledby="headingtrailblazer"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="resignation">
+            <div class="card-header" id="headingresignation" type="button" data-toggle="collapse"
+                data-target="#collapseresignation" aria-expanded="false" aria-controls="collapseresignation">
+                <text class="btn bg-transparent">Resignations (RSG)</text>
+            </div>
+            <div id="collapseresignation" class="collapse" aria-labelledby="headingresignation"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="statuscheck">
+            <div class="card-header" id="headingstatuscheck" type="button" data-toggle="collapse"
+                data-target="#collapsestatuscheck" aria-expanded="false" aria-controls="collapsestatuscheck">
+                <text class="btn bg-transparent">Status Checks (STC)</text>
+            </div>
+            <div id="collapsestatuscheck" class="collapse" aria-labelledby="headingstatuscheck"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="logs">
+            <div class="card-header" id="headinglogs" type="button" data-toggle="collapse" data-target="#collapselogs"
+                aria-expanded="false" aria-controls="collapselogs">
+                <text class="btn bg-transparent">Letters of Good Standing (LGS)</text>
+            </div>
+            <div id="collapselogs" class="collapse" aria-labelledby="headinglogs" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="directdebit">
+            <div class="card-header" id="headingdirectdebit" type="button" data-toggle="collapse"
+                data-target="#collapsedirectdebit" aria-expanded="false" aria-controls="collapsedirectdebit">
+                <text class="btn bg-transparent">Direct Debit (DDD)</text>
+            </div>
+            <div id="collapsedirectdebit" class="collapse" aria-labelledby="headingdirectdebit"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="datesandfees">
+            <div class="card-header" id="headingdatesandfees" type="button" data-toggle="collapse"
+                data-target="#collapsedatesandfees" aria-expanded="false" aria-controls="collapsedatesandfees">
+                <text class="btn bg-transparent">Dates and Fees (DAF)</text>
+            </div>
+            <div id="collapsedatesandfees" class="collapse" aria-labelledby="headingdatesandfees"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="affiliatesubscription">
+            <div class="card-header" id="headingaffiliatesubscription" type="button" data-toggle="collapse"
+                data-target="#collapseaffiliatesubscription" aria-expanded="false"
+                aria-controls="collapseaffiliatesubscription">
+                <text class="btn bg-transparent">Affiliate Specific Subscriptions and Assistance (AFS)</text>
+            </div>
+            <div id="collapseaffiliatesubscription" class="collapse" aria-labelledby="headingaffiliatesubscription"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="memberreducedsubscription">
+            <div class="card-header" id="headingmemberreducedsubscription" type="button" data-toggle="collapse"
+                data-target="#collapsememberreducedsubscription" aria-expanded="false"
+                aria-controls="collapsememberreducedsubscription">
+                <text class="btn bg-transparent">Reduced Subscription - Members (RSU)</text>
+            </div>
+            <div id="collapsememberreducedsubscription" class="collapse"
+                aria-labelledby="headingmemberreducedsubscription" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="benevolent">
+            <div class="card-header" id="headingbenevolent" type="button" data-toggle="collapse"
+                data-target="#collapsebenevolent" aria-expanded="false" aria-controls="collapsebenevolent">
+                <text class="btn bg-transparent">Benevolent Fund - Members (BNV)</text>
+            </div>
+            <div id="collapsebenevolent" class="collapse" aria-labelledby="headingbenevolent" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="winback">
+            <div class="card-header" id="headingwinback" type="button" data-toggle="collapse"
+                data-target="#collapsewinback" aria-expanded="false" aria-controls="collapsewinback">
+                <text class="btn bg-transparent">Winback (WBK)</text>
+            </div>
+            <div id="collapsewinback" class="collapse" aria-labelledby="headingwinback" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="subscription">
+            <div class="card-header" id="headingsubscription" type="button" data-toggle="collapse"
+                data-target="#collapsesubscription" aria-expanded="false" aria-controls="collapsesubscription">
+                <text class="btn bg-transparent">Subscription General (SUBH)</text>
+            </div>
+            <div id="collapsesubscription" class="collapse" aria-labelledby="headingsubscription"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="transfer">
+            <div class="card-header" id="headingtransfer" type="button" data-toggle="collapse"
+                data-target="#collapsetransfer" aria-expanded="false" aria-controls="collapsetransfer">
+                <text class="btn bg-transparent">Transfers (TRF)</text>
+            </div>
+            <div id="collapsetransfer" class="collapse" aria-labelledby="headingtransfer" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="tuitionprovider">
+            <div class="card-header" id="headingtuitionprovider" type="button" data-toggle="collapse"
+                data-target="#collapsetuitionprovider" aria-expanded="false" aria-controls="collapsetuitionprovider">
+                <text class="btn bg-transparent">Tution Provider (TUP)</text>
+            </div>
+            <div id="collapsetuitionprovider" class="collapse" aria-labelledby="headingtuitionprovider"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="londonuniversity">
+            <div class="card-header" id="headinglondonuniversity" type="button" data-toggle="collapse"
+                data-target="#collapselondonuniversity" aria-expanded="false" aria-controls="collapselondonuniversity">
+                <text class="btn bg-transparent">University of London (UOL)</text>
+            </div>
+            <div id="collapselondonuniversity" class="collapse" aria-labelledby="headinglondonuniversity"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="china">
+            <div class="card-header" id="headingchina" type="button" data-toggle="collapse" data-target="#collapsechina"
+                aria-expanded="false" aria-controls="collapsechina">
+                <text class="btn bg-transparent">China (CHX)</text>
+            </div>
+            <div id="collapsechina" class="collapse" aria-labelledby="headingchina" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="departmentsandlocaloffice">
+            <div class="card-header" id="headingdepartmentsandlocaloffice" type="button" data-toggle="collapse"
+                data-target="#collapsedepartmentsandlocaloffice" aria-expanded="false"
+                aria-controls="collapsedepartmentsandlocaloffice">
+                <text class="btn bg-transparent">Department and Local Office Details and Handoffs (DPT)</text>
+            </div>
+            <div id="collapsedepartmentsandlocaloffice" class="collapse"
+                aria-labelledby="headingdepartmentsandlocaloffice" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="emailissues">
+            <div class="card-header" id="headingemailissues" type="button" data-toggle="collapse"
+                data-target="#collapseemailissues" aria-expanded="false" aria-controls="collapseemailissues">
+                <text class="btn bg-transparent">Email Issues (EML)</text>
+            </div>
+            <div id="collapseemailissues" class="collapse" aria-labelledby="headingemailissues"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="forms">
+            <div class="card-header" id="headingforms" type="button" data-toggle="collapse" data-target="#collapseforms"
+                aria-expanded="false" aria-controls="collapseforms">
+                <text class="btn bg-transparent">Commonly used forms (FRM)</text>
+            </div>
+            <div id="collapseforms" class="collapse" aria-labelledby="headingforms" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="publications">
+            <div class="card-header" id="headingpublications" type="button" data-toggle="collapse"
+                data-target="#collapsepublications" aria-expanded="false" aria-controls="collapsepublications">
+                <text class="btn bg-transparent">Publications (SA, A&B, Rulebook)</text>
+            </div>
+            <div id="collapsepublications" class="collapse" aria-labelledby="headingpublications"
+                data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="card" id="russia">
+            <div class="card-header" id="headingrussia" type="button" data-toggle="collapse"
+                data-target="#collapserussia" aria-expanded="false" aria-controls="collapserussia">
+                <text class="btn bg-transparent">Russia (RUS)</text>
+            </div>
+            <div id="collapserussia" class="collapse" aria-labelledby="headingrussia" data-parent="#toggleList">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
         <div class="card" id="links">
             <div class="card-header" id="headingsingletemplate" type="button" data-toggle="collapse"
                 data-target="#collapselinks" aria-expanded="false" aria-controls="collapselinks">
@@ -1164,7 +1813,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 
@@ -1177,6 +1825,14 @@
             $(".collapse").toggleClass("show");
         });
     });
+    function copyToClipboard(text) {
+        var dummy = document.createElement("textarea");
+        document.body.appendChild(dummy);
+        dummy.value = text;
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+    }
 </script>
 <script>
     // When the user scrolls down 20px from the top of the document, show the button
